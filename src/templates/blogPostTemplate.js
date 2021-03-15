@@ -4,6 +4,7 @@ import React from 'react';
 import Dump from '../components/Dump';
 import {Layout} from '../components/Layout';
 
+
 export default ({data, pageContext}) => {
   const {frontmatter, body} = data.mdx;
   const {previous, next} = pageContext;

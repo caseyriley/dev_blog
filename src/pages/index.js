@@ -1,4 +1,6 @@
-import { graphql, Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
+import {GatsbyImage, getImage} from "gatsby-plugin-image"
+// import Img from 'gatsby-image';
 import React from 'react';
 import styled from 'styled-components';
 import { Layout } from '../components/Layout';
@@ -7,21 +9,34 @@ const IndexWrapper = styled.main``;
 
 const PostWrapper = styled.div``;
 
-export default ({ data }) => {
-  return (
+// const Image = styled(Img)`
+//   border-radius: 5px;
+// `;
 
+
+
+export default ({ data }) => {
+  console.log("data+++++++++++O", data)
+  console.log("publicURL+++++++++++O", data.allMdx.nodes[0].frontmatter.cover.publicURL)
+  const image = getImage(data.allMdx.nodes[0].frontmatter.cover);
+  return (
     <Layout>
       <IndexWrapper>
+        {/* <Dump data={data}></Dump> */}
         {data.allMdx.nodes.map(
-          ({ excerpt, frontmatter, fields }) => (
-          <PostWrapper>
-            <Link to={fields.slug}>
-              <h1>{frontmatter.title}</h1>
-              <p>{frontmatter.date}</p>
-              <p>{excerpt}</p>
-            </Link>
-          </PostWrapper>
-        ))}
+          ({ id, excerpt, frontmatter, fields }) => (
+            <PostWrapper key={id}>
+              <Link to={fields.slug}>
+              
+                  <GatsbyImage image={image} alt={""}/>
+                
+                <h1>{frontmatter.title}</h1>
+                <p>{frontmatter.date}</p>
+                <p>{excerpt}</p>
+              </Link>
+            </PostWrapper>
+          )
+        )}
       </IndexWrapper>
     </Layout>
   );
@@ -38,7 +53,13 @@ export const query = graphql`
         excerpt(pruneLength: 250)
         frontmatter {
           title
-          date
+          date(formatString: "YYYY MMMM Do")
+          cover {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(width: 500, aspectRatio: 1.5) 
+            }
+          }
         }
         fields {
           slug
@@ -46,4 +67,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`; 
