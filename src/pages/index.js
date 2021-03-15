@@ -16,8 +16,6 @@ const PostWrapper = styled.div``;
 
 
 export default ({ data }) => {
-  console.log("data+++++++++++O", data)
-  console.log("publicURL+++++++++++O", data.allMdx.nodes[0].frontmatter.cover.publicURL)
   const image = getImage(data.allMdx.nodes[0].frontmatter.cover);
   return (
     <Layout>
@@ -28,7 +26,7 @@ export default ({ data }) => {
             <PostWrapper key={id}>
               <Link to={fields.slug}>
               
-                  <GatsbyImage image={image} alt={""}/>
+                <GatsbyImage image={image} alt={""}/>
                 
                 <h1>{frontmatter.title}</h1>
                 <p>{frontmatter.date}</p>
