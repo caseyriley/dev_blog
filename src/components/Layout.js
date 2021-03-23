@@ -4,11 +4,8 @@ import {useSiteMetadata} from '../hooks/useSiteMetadata';
 import {Header} from './Header'
 
 const AppStyles = styled.main`
-  max-width: 590px;
+
   margin: 0 auto;
-  .post-image {
-    width: 590px;
-  }
 `;
 
 export const Layout = ({children}) => {

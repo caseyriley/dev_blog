@@ -5,6 +5,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Layout } from '../components/Layout';
 
+import "./index.css"
+
 const IndexWrapper = styled.main``;
 
 const PostWrapper = styled.div``;
@@ -28,7 +30,9 @@ export default ({ data }) => {
             <PostWrapper key={id}>
               <Link to={fields.slug}>
                 {console.log("frontmatter.cover.childImageSharp.fixed=====>",frontmatter.cover.childImageSharp.gatsbyImageData)}
-                <GatsbyImage image={frontmatter.cover.childImageSharp.gatsbyImageData} alt={""}/>
+                <GatsbyImage  className="post-image" image={frontmatter.cover.childImageSharp.gatsbyImageData} alt={""}
+                layout="fixed"
+                />
                 
                 <h1>{frontmatter.title}</h1>
                 <p>{frontmatter.date}</p>
@@ -57,7 +61,10 @@ export const query = graphql`
           cover {
             publicURL
             childImageSharp {
-              gatsbyImageData(layout: FIXED)
+              gatsbyImageData(
+                layout: FIXED
+                width: 500
+              )
             }
           }
         }
