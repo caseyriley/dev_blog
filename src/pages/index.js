@@ -16,17 +16,19 @@ const PostWrapper = styled.div``;
 
 
 export default ({ data }) => {
-  const image = getImage(data.allMdx.nodes[0].frontmatter.cover);
+
   return (
     <Layout>
       <IndexWrapper>
         {/* <Dump data={data}></Dump> */}
         {data.allMdx.nodes.map(
           ({ id, excerpt, frontmatter, fields }) => (
+            // console.log("data.allMdx=======>",data.allMdx)
+            // const image = frontmatter.cover.publicURL;
             <PostWrapper key={id}>
               <Link to={fields.slug}>
-              
-                <GatsbyImage image={image} alt={""}/>
+                {console.log("frontmatter.cover.childImageSharp.fixed=====>",frontmatter.cover.childImageSharp.gatsbyImageData)}
+                <GatsbyImage image={frontmatter.cover.childImageSharp.gatsbyImageData} alt={""}/>
                 
                 <h1>{frontmatter.title}</h1>
                 <p>{frontmatter.date}</p>
@@ -55,7 +57,7 @@ export const query = graphql`
           cover {
             publicURL
             childImageSharp {
-              gatsbyImageData(width: 500, aspectRatio: 1.5) 
+              gatsbyImageData(layout: FIXED)
             }
           }
         }
