@@ -1,5 +1,5 @@
 import { Link, graphql } from 'gatsby';
-import {GatsbyImage, getImage} from "gatsby-plugin-image"
+import {GatsbyImage} from "gatsby-plugin-image"
 // import Img from 'gatsby-image';
 import React from 'react';
 import styled from 'styled-components';
@@ -17,7 +17,7 @@ const PostWrapper = styled.div``;
 
 
 
-export default ({ data }) => {
+const indexComponent = ({ data }) => {
 
   return (
     <Layout>
@@ -45,7 +45,7 @@ export default ({ data }) => {
     </Layout>
   );
 };
-
+export default indexComponent;
 export const query = graphql`
   query SITE_INDEX_QUERY {
     allMdx(
