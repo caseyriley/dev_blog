@@ -42,7 +42,7 @@ const CopyCode = styled.button`
 export const Code = ({ codeString, language, ...props }) => {
   if (props["react-live"]) {
     return (
-      <LiveProvider code={codeString} noInline={true} theme={theme}>
+      <LiveProvider code={codeString} noInline={false} theme={theme}>
         <LiveEditor />
         <LiveError />
         <LivePreview />

@@ -1,0 +1,29 @@
+---
+title: Get Current User
+date: 2021-05-20
+published: true
+cover: ./download.png
+---
+
+This is how I get my current user in React JS.
+
+
+```jsx 
+  useEffect(() => {
+    const getCurrentUser = async () => {
+      const token = window.localStorage.getItem("auth_token");
+      const response = await fetch(`${API_URL}/users/token`, {
+        method: "GET",
+        mode: "cors",
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (!response.ok) {
+        console.log("getCurrent user response failed in Uploading.js");
+      } else {
+        const json = await response.json();
+        setCurrentUser(json);
+      }
+    };
+    getCurrentUser();
+  }, []);
+```

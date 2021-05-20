@@ -1,0 +1,21 @@
+---
+title: Like Button
+date: 2021-05-21
+published: true
+cover: ./gold-heart.jpg
+---
+
+```js react-live
+function LikeButton() {
+    const [likes, increaseLikes] = React.useState(0)
+
+    return (
+        <>
+            <p class="likes">{likes} likes</p>
+            <button
+                onClick={() => increaseLikes(likes + 1)} />
+        </>
+    )
+}
+
+```
