@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: `The Localhost Blog`,
+  title: `Code Journey`,
   description: `This is my coding blog where I write about my coding journey.`,
 };
 
