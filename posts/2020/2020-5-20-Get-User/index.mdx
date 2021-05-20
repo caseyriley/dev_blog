@@ -2,28 +2,49 @@
 title: Get Current User
 date: 2021-05-20
 published: true
-cover: ./download.png
+cover: ./Face.png
 ---
 
-This is how I get my current user in React JS.
+This is one way I Login a user in React JS.
 
+```jsx
+const handleSubmit = async () => {
+  const response = await fetch(`${API_URL}/auth/login`, {
+    method: "POST",
+    mode: "cors",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email: `${email}`, password: `${password}` }),
+  });
 
-```jsx 
-  useEffect(() => {
-    const getCurrentUser = async () => {
-      const token = window.localStorage.getItem("auth_token");
-      const response = await fetch(`${API_URL}/users/token`, {
-        method: "GET",
-        mode: "cors",
-        headers: { Authorization: `Bearer ${token}` },
-      });
-      if (!response.ok) {
-        console.log("getCurrent user response failed in Uploading.js");
-      } else {
-        const json = await response.json();
-        setCurrentUser(json);
-      }
-    };
-    getCurrentUser();
-  }, []);
+  if (response.ok) {
+  } else {
+  }
+  const res = await response.json();
+  if (res.auth_token !== undefined) {
+    window.localStorage.setItem("auth_token", res.auth_token);
+    window.location.reload();
+  }
+};
+```
+
+This is how I get that user.
+
+```jsx
+useEffect(() => {
+  const getCurrentUser = async () => {
+    const token = window.localStorage.getItem("auth_token");
+    const response = await fetch(`${API_URL}/users/token`, {
+      method: "GET",
+      mode: "cors",
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    if (!response.ok) {
+      console.log("getCurrent user response failed");
+    } else {
+      const json = await response.json();
+      setCurrentUser(json);
+    }
+  };
+  getCurrentUser();
+}, []);
 ```

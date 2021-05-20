@@ -1,5 +1,7 @@
+
+.blog-tile {
+    text-shadow: 20px 2px 2px rgb(0, 0, 0, .5);
+}
 .post-image {
     max-width: 50%;
-    /* align-items: center;
-    object-position: center; */
 }
