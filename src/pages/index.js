@@ -1,5 +1,5 @@
 import { Link, graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage} from "gatsby-plugin-image";
 // import Img from 'gatsby-image';
 import React from "react";
 import styled from "styled-components";
@@ -23,6 +23,7 @@ const PostWrapper = styled.div``;
 // `;
 
 const indexComponent = ({ data }) => {
+  console.log('data', data)
   return (
     <Layout>
       <IndexWrapper>
@@ -39,8 +40,7 @@ const indexComponent = ({ data }) => {
               <GatsbyImage
                 className="post-image"
                 image={frontmatter.cover.childImageSharp.gatsbyImageData}
-                alt={""}
-                layout="fixed"
+                alt={"blog-image"}
               />
 
               <h1 class="blog-title">{frontmatter.title}</h1>
