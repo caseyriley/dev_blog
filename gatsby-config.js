@@ -4,7 +4,7 @@ const siteMetadata = {
 };
 
 module.exports = {
-  pathPrefix: `/blog`,
+  pathPrefix: `/dev_blog`,
   siteMetadata: siteMetadata,
   plugins: [
     `gatsby-plugin-styled-components`,
