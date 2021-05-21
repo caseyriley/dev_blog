@@ -13,17 +13,39 @@ const HeaderStyles = styled.header`
 
 export const Header = ({ siteTitle, siteDescription }) => (
   <HeaderStyles>
-    <Link to="/">
-      <h1>{siteTitle}</h1>
-      <p>{siteDescription}</p>
+    <Link class={"link"} to="/">
+      <h1 >{siteTitle}</h1>
+      <p >{siteDescription}</p>
     </Link>
     <div class={"link-box"}>
-      <Link to="https://caseyriley.github.io/" target="_blank">My Portfolio Site</Link>
-      <Link to="https://github.com/caseyriley" target="_blank">Github</Link>
-      <Link to="https://www.linkedin.com/in/casey-riley-3396231a1/" target="_blank">
+      <Link
+        class={"link"}
+        to="https://caseyriley.github.io/"
+        target="_blank"
+      >
+        My Portfolio Site
+      </Link>
+      <Link
+        class={"link"}
+        to="https://github.com/caseyriley"
+        target="_blank"
+      >
+        Github
+      </Link>
+      <Link
+        class={"link"}
+        to="https://www.linkedin.com/in/casey-riley-3396231a1/"
+        target="_blank"
+      >
         Linkedin
       </Link>
-      <Link to="https://angel.co/u/casey-riley-1" target="_blank">Angelist</Link>
+      <Link
+        class={"link"}
+        to="https://angel.co/u/casey-riley-1"
+        target="_blank"
+      >
+        Angelist
+      </Link>
     </div>
   </HeaderStyles>
 );

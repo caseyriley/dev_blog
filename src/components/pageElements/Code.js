@@ -9,7 +9,7 @@ const Pre = styled.pre`
   text-align: left;
   margin: 20px 0px 20px 0px;
   padding: 0.5em;
-  box-sizing: border-box !important;
+  box-sizing: border-box;
   overflow-x: auto;
   border-radius: 3px;
 
@@ -23,7 +23,7 @@ const Pre = styled.pre`
 
 const LineNo = styled.span`
   display: inline-block;
-  box-sizing: border-box !important;
+  box-sizing: border-box;
   width: 2em;
   user-select: none;
   opacity: 0.3;

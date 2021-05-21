@@ -1,0 +1,7 @@
+.blog-title {
+    text-decoration: none;
+    transition: all .3s;
+  }
+  .blog-title:hover {
+    color: rgb(254, 120, 220);
+  }

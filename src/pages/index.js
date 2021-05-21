@@ -1,6 +1,5 @@
 import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { styles } from "prism-react-renderer/themes/nightOwl";
 // import Img from 'gatsby-image';
 import React from "react";
 import styled from "styled-components";
@@ -32,7 +31,7 @@ const indexComponent = ({ data }) => {
           // console.log("data.allMdx=======>",data.allMdx)
           // const image = frontmatter.cover.publicURL;
           <PostWrapper key={id}>
-            <Link to={fields.slug}>
+            <Link class={"link"} to={fields.slug}>
               {console.log(
                 "frontmatter.cover.childImageSharp.fixed=====>",
                 frontmatter.cover.childImageSharp.gatsbyImageData

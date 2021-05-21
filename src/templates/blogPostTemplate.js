@@ -4,11 +4,12 @@ import React from "react";
 // import Dump from '../components/Dump';
 import { Layout } from "../components/Layout";
 import styled from "styled-components";
+import "./index.css"
+
 
 const IndexWrapper = styled.main`
   font-family: "Raleway", "Farro", sans-serif;
   margin: 20px 0px 20px 0px;
-  border: 1px solid green;
 `;
 
 
@@ -22,14 +23,14 @@ const blogPostTemplate = ({ data, pageContext }) => {
         {/* <Dump previous={previous}/>
       <Dump next={next}/> */}
         <IndexWrapper>
-          <h1 class={"blog-tile"}>{frontmatter.title}</h1>
+          <h1 class={"blog-title"}>{frontmatter.title}</h1>
           <p>{frontmatter.date}</p>
         </IndexWrapper>
 
         <MDXRenderer>{body}</MDXRenderer>
 
         {previous && (
-          <Link to={previous.fields.slug}>
+          <Link class={"link"} to={previous.fields.slug}>
             <p>{previous.frontmatter.title}</p>
           </Link>
         )}
@@ -37,7 +38,7 @@ const blogPostTemplate = ({ data, pageContext }) => {
         {next === false ? null : (
           <>
             {next && (
-              <Link to={next.fields.slug}>
+              <Link class={"link"} to={next.fields.slug}>
                 <p>{next.frontmatter.title}</p>
               </Link>
             )}
