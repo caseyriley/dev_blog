@@ -4,12 +4,14 @@ const siteMetadata = {
 };
 
 module.exports = {
+  pathPrefix: `/blog`,
   siteMetadata: siteMetadata,
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
