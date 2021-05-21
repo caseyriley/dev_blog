@@ -10,21 +10,29 @@ Try changing "likes + 1" to "likes + 3". <br/>
 Then click on the heart. <br/>
 Have fun with inline styles if your feeling it.
 
-
 ```jsx react-live
 function LikeButton() {
+  const [likes, increaseLikes] = React.useState(0);
 
-    const [likes, increaseLikes] = React.useState(0)
+  return (
+    <>
+      <p style={{ fontSize: "22px", color: "purple" }}>{likes} likes</p>
 
-    return (
-        <>
-            <p style={{fontSize: '22px', color: 'purple'}}>{likes} likes</p>
-
-            <button
-                style={{height: '50px', width: '50px', borderRadius: '10px', borderColor: 'purple', fontSize: '30px'}}
-                onClick={() => increaseLikes(likes + 1)}><span role={"img"} aria-label={"gold heart"}>💛</span></button>
-        </>
-    )
+      <button
+        style={{
+          height: "50px",
+          width: "50px",
+          borderRadius: "10px",
+          borderColor: "purple",
+          fontSize: "30px",
+        }}
+        onClick={() => increaseLikes(likes + 1)}
+      >
+        <span role={"img"} aria-label={"gold heart"}>
+          💛
+        </span>
+      </button>
+    </>
+  );
 }
-
 ```

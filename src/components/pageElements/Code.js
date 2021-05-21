@@ -7,8 +7,9 @@ import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live";
 
 const Pre = styled.pre`
   text-align: left;
-  margin: 1em 0;
+  margin: 20px 0px 20px 0px;
   padding: 0.5em;
+  box-sizing: border-box !important;
   overflow-x: auto;
   border-radius: 3px;
 
@@ -22,6 +23,7 @@ const Pre = styled.pre`
 
 const LineNo = styled.span`
   display: inline-block;
+  box-sizing: border-box !important;
   width: 2em;
   user-select: none;
   opacity: 0.3;

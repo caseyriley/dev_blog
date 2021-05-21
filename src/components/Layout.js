@@ -1,23 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
-import {useSiteMetadata} from '../hooks/useSiteMetadata';
-import {Header} from './Header'
+import React from "react";
+import styled from "styled-components";
+import { useSiteMetadata } from "../hooks/useSiteMetadata";
+import { Header } from "./Header";
 
 const AppStyles = styled.main`
-
-  margin: 0;
+  margin: 0px 20px 20px 20px;
   height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0px;
-  left; 0px;
-  right: 0px;
-  bottom: 0px;
+  width: calc(100vw - 40px);
   overflow-y: scroll;
 `;
 
-export const Layout = ({children}) => {
-  const {title, description} = useSiteMetadata();
+export const Layout = ({ children }) => {
+  const { title, description } = useSiteMetadata();
   return (
     <>
       <AppStyles>
