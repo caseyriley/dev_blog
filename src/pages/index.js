@@ -1,5 +1,5 @@
 import { Link, graphql } from "gatsby";
-import { GatsbyImage} from "gatsby-plugin-image";
+import { GatsbyImage, StaticImage} from "gatsby-plugin-image";
 // import Img from 'gatsby-image';
 import React from "react";
 import styled from "styled-components";
@@ -37,12 +37,12 @@ const indexComponent = ({ data }) => {
                 "frontmatter.cover.childImageSharp.fixed=====>",
                 frontmatter.cover.publicURL
               )}
+
               <GatsbyImage
-                className="post-image"
                 image={frontmatter.cover.childImageSharp.gatsbyImageData}
                 alt={"blog-image"}
               />
-              <img class={"post-img"} src={frontmatter.cover.publicURL} />
+              {/* <img class={"post-img"} src={frontmatter.cover.publicURL} /> */}
 
               <h1 class="blog-title">{frontmatter.title}</h1>
               <p>{frontmatter.date}</p>
@@ -73,7 +73,6 @@ export const query = graphql`
               gatsbyImageData(
                 layout: CONSTRAINED
                 width: 200
-                placeholder: BLURRED
                 formats: [AUTO, WEBP, AVIF]
               )
             }
