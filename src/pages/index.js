@@ -35,13 +35,14 @@ const indexComponent = ({ data }) => {
             <Link class={"link"} to={fields.slug}>
               {console.log(
                 "frontmatter.cover.childImageSharp.fixed=====>",
-                frontmatter.cover.childImageSharp.gatsbyImageData
+                frontmatter.cover.publicURL
               )}
               <GatsbyImage
                 className="post-image"
                 image={frontmatter.cover.childImageSharp.gatsbyImageData}
                 alt={"blog-image"}
               />
+              <img class={"post-img"} src={frontmatter.cover.publicURL} />
 
               <h1 class="blog-title">{frontmatter.title}</h1>
               <p>{frontmatter.date}</p>

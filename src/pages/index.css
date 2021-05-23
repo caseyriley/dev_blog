@@ -10,3 +10,11 @@ body {
   justify-content: center;
 }
 
+.post-image {
+  display: none;
+}
+
+.post-img {
+  width: 200px;
+  height: 200px;
+}
