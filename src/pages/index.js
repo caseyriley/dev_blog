@@ -1,11 +1,11 @@
 import { Link, graphql } from "gatsby";
-import { GatsbyImage, StaticImage} from "gatsby-plugin-image";
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 // import Img from 'gatsby-image';
 import React from "react";
 import styled from "styled-components";
 import { Layout } from "../components/Layout";
 
-import "./index.css"
+import "./index.css";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Farro:wght@500&family=Raleway&display=swap');
@@ -23,7 +23,7 @@ const PostWrapper = styled.div``;
 // `;
 
 const indexComponent = ({ data }) => {
-  console.log('data', data)
+  console.log("data", data);
   return (
     <Layout>
       <IndexWrapper>
