@@ -42,9 +42,9 @@ const indexComponent = ({ data }) => {
                 image={frontmatter.cover.childImageSharp.gatsbyImageData}
                 alt={"blog-image"}
               />
-              {/* <img class={"post-img"} src={frontmatter.cover.publicURL} /> */}
+              {/* <img className={"post-img"} src={frontmatter.cover.publicURL} /> */}
 
-              <h1 class="blog-title">{frontmatter.title}</h1>
+              <h1 className="blog-title">{frontmatter.title}</h1>
               <p>{frontmatter.date}</p>
               <p>{excerpt}</p>
             </Link>
