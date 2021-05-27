@@ -1,65 +1,94 @@
 .blog-title {
-    text-decoration: none;
-    transition: all .3s;
-  }
+  text-decoration: none;
+  transition: all 0.3s;
+}
 
-  .color-button {
-    width: 150px;
-    height: 50px;
-    border-radius: 100px;
-    color: rgb(239, 239, 239);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(195, 195, 195);
-    border-radius: 999px;
-    transition: all 1s;
-    box-shadow: 4px 4px 3px 2px rgb(0, 0, 0, .5);
-    text-shadow: 1px 1px 1px black;
-    transform: translateY(0px);  
-    margin-top: 20px;
+.color-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 100px;
+  color: rgb(239, 239, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 999px;
+  transition: all 1s;
+  box-shadow: 4px 4px 3px 2px rgb(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px black;
+  transform: translateY(0px);
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .color-button:hover {
-    color: white;
-    border: 1px solid white;
-    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, .5);
-    text-shadow: 0px 0px 0px black;
-    transform: translateY(2px);
+  color: white;
+  border: 1px solid white;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 0px black;
+  transform: translateY(2px);
 }
 /* /////////////////Color///////////////// */
 .red {
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
 
 .orange {
-    background-color: orange;
-    color: white;
+  background-color: orange;
+  color: white;
 }
 
 .yellow {
-    background-color: yellow;
-    color: rgb(235, 234, 234);
+  background-color: yellow;
+  color: rgb(235, 234, 234);
 }
 
 .green {
-    background-color: green;
-    color: white;
+  background-color: green;
+  color: white;
 }
 
 .blue {
-    background-color: lightskyblue;
-    color: white;
+  background-color: lightskyblue;
+  color: white;
 }
 
 .indigo {
-    background-color: indigo;
-    color: white;
+  background-color: indigo;
+  color: white;
 }
 
 .purple {
-    background-color: purple;
-    color: white;
+  background-color: purple;
+  color: white;
 }
 
+/* /////////////like button////////////////// */
+
+.like-button {
+  height: 51px;
+  width: 51px;
+  border-radius: 10px;
+  border-color: purple;
+  background-color: rgb(234, 214, 234);
+  font-size: 30px;
+  cursor: pointer;
+  transition: all .5s;
+  box-shadow: 2px 4px 8px 1px rgb(0, 0, 0, .4),
+  inset -2px -2px 2px 0px rgb(0, 0, 0, .4);
+  position: relative;
+}
+
+.like-button:hover {
+  height: 46px;
+  width: 46px;
+  font-size: 32px;
+  border-color: orange;
+  background-color: rgb(148, 16, 196);
+  box-shadow: 1px 2px 6px 0px rgb(0, 0, 0, .4),
+  inset -1px -1px 1px 0px rgb(0, 0, 0, .4);
+  transform: translateY(2px);
+  transform: translateX(2px);
+
+}

@@ -19,13 +19,7 @@ function LikeButton() {
       <p style={{ fontSize: "22px", color: "purple" }}>{likes} likes</p>
 
       <button
-        style={{
-          height: "50px",
-          width: "50px",
-          borderRadius: "10px",
-          borderColor: "purple",
-          fontSize: "30px",
-        }}
+        className={"like-button"}
         onClick={() => increaseLikes(likes + 1)}
       >
         <span role={"img"} aria-label={"gold heart"}>
