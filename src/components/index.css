@@ -14,7 +14,9 @@
   display: flex;
   justify-content: space-evenly;
   text-decoration: none;
-  background: rgb(255,250,122);
-background: linear-gradient(90deg, rgba(255,250,122,1) 0%, rgba(121,251,255,1) 100%);
+
+  background: rgb(172, 252, 255);
+  color: rgb(172, 252, 255);
+  /* background: linear-gradient(0deg, rgba(121,251,255,1) 25%, rgba(255,250,122,1) 50%, rgba(121,251,255,1) 75%); */
 }
 
