@@ -10,8 +10,7 @@ import "./index.css"
 const IndexWrapper = styled.main`
   font-family: "Raleway", "Farro", sans-serif;
   margin: 20px 0px 20px 0px;
-  color: rgb(92, 196, 195);
-  color: rgb(172, 252, 255);
+  color: rgb(81, 240, 249);
   text-shadow: 1px 1px 2px black;
  
 `;

@@ -5,18 +5,41 @@
 .link:hover {
   color: rgb(254, 120, 220);
 }
-
+.link-box-c {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 .link-box {
   margin: 20px, 0px;
+  height: 30px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  border: 2px solid rgb(81, 240, 249);
+  border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
   text-decoration: none;
+  background-color: rgb(254, 213, 219);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 
-  background: rgb(172, 252, 255);
-  color: rgb(172, 252, 255);
+  
   /* background: linear-gradient(0deg, rgba(121,251,255,1) 25%, rgba(255,250,122,1) 50%, rgba(121,251,255,1) 75%); */
+}
+
+.link-box-shadow {
+  height: 30px;
+  width: calc(100% - 30px);
+  box-shadow: 0px 6px 20px 0px rgba(86, 68, 68, 0.5);
+  position: absolute;
+  top: 0px;
+  pointer-events: none;
+  border-radius: 5px;
 }
 
