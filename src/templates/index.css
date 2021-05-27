@@ -2,6 +2,64 @@
     text-decoration: none;
     transition: all .3s;
   }
-  .blog-title:hover {
-    color: rgb(254, 120, 220);
-  }
+
+  .color-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 100px;
+    color: rgb(239, 239, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 999px;
+    transition: all 1s;
+    box-shadow: 4px 4px 3px 2px rgb(0, 0, 0, .5);
+    text-shadow: 1px 1px 1px black;
+    transform: translateY(0px);  
+    margin-top: 20px;
+}
+
+.color-button:hover {
+    color: white;
+    border: 1px solid white;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, .5);
+    text-shadow: 0px 0px 0px black;
+    transform: translateY(2px);
+}
+/* /////////////////Color///////////////// */
+.red {
+    background-color: red;
+    color: white;
+}
+
+.orange {
+    background-color: orange;
+    color: white;
+}
+
+.yellow {
+    background-color: yellow;
+    color: rgb(235, 234, 234);
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.blue {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.indigo {
+    background-color: indigo;
+    color: white;
+}
+
+.purple {
+    background-color: purple;
+    color: white;
+}
+

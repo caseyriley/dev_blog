@@ -12,7 +12,7 @@ const IndexWrapper = styled.main`
   margin: 20px 0px 20px 0px;
   color: rgb(81, 240, 249);
   text-shadow: 1px 1px 2px black;
- 
+
 `;
 
 
