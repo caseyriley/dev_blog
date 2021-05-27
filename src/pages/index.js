@@ -16,7 +16,8 @@ const IndexWrapper = styled.main`
   margin: 20px 0px 20px 0px;
 `;
 
-const PostWrapper = styled.div``;
+const PostWrapper = styled.div`
+`;
 
 // const Image = styled(Img)`
 //   border-radius: 5px;
