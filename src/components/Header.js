@@ -9,6 +9,7 @@ import "./index.css";
 const HeaderStyles = styled.header`
   font-family: "Raleway", "Farro", sans-serif;
   margin: 20px 0px 20px 0px;
+  
 `;
 
 export const Header = ({ siteTitle, siteDescription }) => (
