@@ -93,3 +93,8 @@
   transform: translateX(2px);
 
 }
+
+.like-count {
+  font-size: 22px; 
+  color: purple;
+}
