@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "gatsby develop -p 9988 -o",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploybuild": "gh-pages -d public"
   },
   "keywords": [],
   "author": "",
