@@ -78,14 +78,9 @@
 }
 
 .like-button:hover {
-  /* height: 46px;
-  width: 46px; */
   font-size: 35px;
   border-color: orange;
   background-color: rgb(148, 16, 196);
- 
-  /* transform: translateY(2px);
-  transform: translateX(2px); */
 
 }
 
