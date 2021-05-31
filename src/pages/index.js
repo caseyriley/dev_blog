@@ -28,29 +28,31 @@ const indexComponent = ({ data }) => {
   console.log("data", data);
   return (
     <Layout>
-      < div className={"index-wrapper"}>
+      <div className={"index-wrapper"}>
         {/* <Dump data={data}></Dump> */}
         {data.allMdx.nodes.map(({ id, excerpt, frontmatter, fields }) => (
           // console.log("data.allMdx=======>",data.allMdx)
           // const image = frontmatter.cover.publicURL;
+          <div key={id} className={"post-box"}>
+            <Link class={"link post-wrapper"} to={fields.slug}>
+              {console.log(
+                "frontmatter.cover.childImageSharp.fixed=====>",
+                frontmatter.cover.publicURL
+              )}
 
-          <Link key={id} class={"link post-wrapper"} to={fields.slug}>
-            {console.log(
-              "frontmatter.cover.childImageSharp.fixed=====>",
-              frontmatter.cover.publicURL
-            )}
+              <GatsbyImage
+                className={"post-image"}
+                image={frontmatter.cover.childImageSharp.gatsbyImageData}
+                alt={"blog-image"}
+              />
+              {/* <img className={"post-img"} src={frontmatter.cover.publicURL} /> */}
 
-            <GatsbyImage
-              className={"post-image"}
-              image={frontmatter.cover.childImageSharp.gatsbyImageData}
-              alt={"blog-image"}
-            />
-            {/* <img className={"post-img"} src={frontmatter.cover.publicURL} /> */}
-
-            <h1 className="blog-title">{frontmatter.title}</h1>
-            <p className={"blog-p"}>{frontmatter.date}</p>
-            <p className={"blog-p"}>{excerpt}</p>
-          </Link>
+              <h1 className="blog-title">{frontmatter.title}</h1>
+              <p className={"blog-p"}>{frontmatter.date}</p>
+              <p className={"blog-p"}>{excerpt}</p>
+            </Link>
+            <div className={"post-box__shadow"} />
+          </div>
         ))}
       </div>
     </Layout>

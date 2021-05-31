@@ -8,6 +8,7 @@ body {
   margin: 0px;
   display: flex;
   justify-content: center;
+  /* background-color: rgb(254, 254, 254); */
 }
 .blog-title {
   text-decoration: none;
@@ -25,6 +26,15 @@ body {
   width: 200px;
   height: 200px;
 }
+.post-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-height: min-content;
+}
+
 .post-wrapper {
   /* background-color: brown; */
   width: 100%;
@@ -36,7 +46,18 @@ body {
   margin: 0px 0px 40px 0px;
   border-radius: 10px;
   box-sizing: border-box;
+  background-color: white;
+  z-index: 1;
 
+}
+.post-box__shadow {
+  height: calc(100% - 40px);
+  width: calc(100% - 30px);
+  box-shadow: 0px 6px 20px 0px rgba(86, 68, 68, 0.5);
+  position: absolute;
+  top: 0px;
+  pointer-events: none;
+  border-radius: 10px;
 }
 
 .index-wrapper{
