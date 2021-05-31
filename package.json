@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "gatsby develop -p 9988 -o",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "localhost": "rm -r public && gatsby build && gatsby develop -p 9988 -o",
     "build": "gatsby build --prefix-paths",
     "deploybuild": "gh-pages -d public"
   },
