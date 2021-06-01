@@ -13,10 +13,16 @@ const HeaderStyles = styled.header`
 
 export const Header = ({ siteTitle, siteDescription }) => (
   <HeaderStyles>
-    <Link className={"link"} to="/">
-      <h1>{siteTitle}</h1>
-      <p>{siteDescription}</p>
-    </Link>
+    <div className={"header-position"}>
+    <div className={"header-top"}>
+      <Link className={"link"} to="/">
+        <h1>{siteTitle}</h1>
+        <p>{siteDescription}</p>
+      </Link>
+    </div>
+    </div>
+
+
     <div className={"link-box-c"}>
       <div className={"link-box"}>
         <Link
