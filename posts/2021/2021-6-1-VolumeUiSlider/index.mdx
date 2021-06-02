@@ -1,0 +1,31 @@
+---
+title: Mix Meld Volume Slider
+date: 2021-06-01
+published: true
+cover: ./volume-slider.png
+---
+
+My volume slider for Mix Meld 🎶
+
+```jsx react-live
+function VolumeUiSlider() {
+  return (
+    <div class="control-2">
+      <span className="eq eq-2">
+        <span className="eq-level">
+          <img src={"../images/texture.jpg"} alt="" />
+        </span>
+      </span>
+      <div className={"pl2-volume-level"}></div>
+      <input
+        id={"range-input"}
+        className={"pl2-slider-input"}
+        type={"range"}
+        min={"0"}
+        max={"100"}
+        step={"1"}
+      ></input>
+    </div>
+  );
+}
+```
