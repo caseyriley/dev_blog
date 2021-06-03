@@ -90,7 +90,22 @@
 }
 
 /* //////////////Mix Meld Volume Slider////////////// */
-
+.volume-display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+  margin-bottom: 30px;
+}
+.volume-display span {
+  position: relative;
+  left: -45px;
+  color: blueviolet;
+  font-size: 40px;
+}
 #volume-slider-c {
   width: 125px;
   height: 25px;
@@ -101,7 +116,6 @@
 }
 .control-2{
   position: relative;
-  left: calc(50% - 12px);
   width: 55px;
   display: flex;
   justify-content: center;

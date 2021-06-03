@@ -5,27 +5,61 @@ published: true
 cover: ./volume-slider.png
 ---
 
-My volume slider for Mix Meld 🎶
+My volume slider for Mix Meld 🎶 <br/>
+I put a lot of love into the UI/UX of this component so please drag it around :)
 
 ```jsx react-live
 function VolumeUiSlider() {
+  const volumeLevel = React.useRef();
+  const volumeSlider = React.useRef();
+  const volumeFader = React.useRef();
+  const [volumeState, setVolumeState] = React.useState(50);
+
+  function changeVolume() {
+    setVolumeState(volumeSlider.current.value);
+    vol = Number(volumeState) / 100;
+    if (vol > 0.98) {
+      vol = 1;
+    }
+    if (vol < 0.1) {
+      vol = 0;
+    }
+  }
+
+  React.useEffect(() => {
+    if (volumeFader) {
+      volumeFader.current.style.bottom = `${volumeState * 0.75}px`;
+    }
+    if (volumeLevel) {
+      volumeLevel.current.style.height = `${volumeState * 0.75}px`;
+    }
+  }, [volumeState]);
+
   return (
-    <div class="control-2">
-      <span className="eq eq-2">
-        <span className="eq-level">
-          <img src={"../images/texture.jpg"} alt="" />
-        </span>
-      </span>
-      <div className={"pl2-volume-level"}></div>
-      <input
-        id={"range-input"}
-        className={"pl2-slider-input"}
-        type={"range"}
-        min={"0"}
-        max={"100"}
-        step={"1"}
-      ></input>
-    </div>
+    <>
+      <div className={"volume-display"}>
+        <span>{volumeState}</span>
+
+        <div class="control-2">
+          <span className="eq eq-2">
+            <span className="eq-level" ref={volumeFader}>
+              <img src={"../images/texture.jpg"} alt="" />
+            </span>
+          </span>
+          <div className={"pl2-volume-level"} ref={volumeLevel}></div>
+          <input
+            id={"range-input"}
+            className={"pl2-slider-input"}
+            type={"range"}
+            min={"0"}
+            max={"100"}
+            step={"1"}
+            ref={volumeSlider}
+            onChange={changeVolume}
+          ></input>
+        </div>
+      </div>
+    </>
   );
 }
 ```
