@@ -1,25 +1,26 @@
 ---
-title: Color Button
+title: CSS Gradient Selector
 date: 2021-05-23
 published: true
 cover: ./colors-ic.png
 ---
 
-A fun React component for making color gradients I made while learning an application called Storybook :) <br/> 
-Click on any color below, then click a second color. Keep clicking!
+A fun React component for making color gradients I made while learning an application called Storybook :) <br/>
+Click on any color below, then click a second color. Keep clicking! <br/>
+This is also a fun tool for learning all of CSS's built in color names.
 
 ```jsx react-live
 function ColorButton() {
   const [colorState, setColorState] = React.useState("green");
   const [indexState, setIndexState] = React.useState(0);
-  const [selectStateA, setSelectStateA] = React.useState("aqua")
-  const [selectStateB, setSelectStateB] = React.useState("lightpink")
-  const [pickerState, setPickerState] = React.useState(false)
-  function pickColor(color){
+  const [selectStateA, setSelectStateA] = React.useState("aqua");
+  const [selectStateB, setSelectStateB] = React.useState("lightpink");
+  const [pickerState, setPickerState] = React.useState(false);
+  function pickColor(color) {
     let state = !pickerState;
-    if (state) setSelectStateA(color)
-    else setSelectStateB(color)
-    setPickerState(state)
+    if (state) setSelectStateA(color);
+    else setSelectStateB(color);
+    setPickerState(state);
   }
   let colors = React.useRef([
     "white",
@@ -44,21 +45,72 @@ function ColorButton() {
     "hotpink",
     "lightpink",
     "pink",
+    "darkred",
+    "red",
+    "firebrick",
+    "crimson",
+    "indianred",
+    "lightcoral",
+    "salmon",
+    "darksalmon",
+    "lightsalmon",
+    "orangered",
+    "tomato",
+    "darkorange",
+    "coral",
+    "orange",
+    "darkkhaki",
+    "gold",
+    "khaki",
+    "peachpuff",
+    "yellow",
+    "moccasin",
+    "papayawhip",
+    "lightgoldenrodyellow",
+    "lemonchiffon",
+    "lightyellow",
+    "maroon",
+    "brown",
+    "saddlebrown",
+    "sienna",
+    "chocolate",
+    "peru",
+    "rosybrown",
+    "goldenrod",
+    "sandybrown",
+    "tan",
+    "burlywood",
+    "wheat",
+    "navajowhite",
+    "bisque",
+    "blanchedalmond",
+    "cornsilk", "darkgreen", "green", "darkolivegreen", "forestgreen", "seagreen", "olive", "olivedrab", "mediumseagreen", "limegreen", "lime", "springgreen", "mediumspringgreen", "darkseagreen", "mediumaquamarine", "yellowgreen", "chartreuse", "lightgreen", "greenyellow", "palegreen"
   ]);
 
   return (
     <>
-    <div className={"gradient"} style={{background: `linear-gradient(to right,  ${selectStateA} 0%, ${selectStateB} 100%)`}}><span>{selectStateA}</span>  <span>{selectStateB}</span></div>
-    <div className={"swatch-box"}>
+      <div
+        className={"gradient"}
+        style={{
+          background: `linear-gradient(to right,  ${selectStateA} 0%, ${selectStateB} 100%)`,
+        }}
+      >
+        <span>{selectStateA}</span> <span>{selectStateB}</span>
+      </div>
+      <div className={"swatch-box"}>
         {colors.current.map((color, index) => {
-          return ( 
-             
-                <div className={`color-button`} style={{'background-color': `${color}`}} onClick={()=>pickColor(color)}>{color} </div>
-              
-          )
+          return (
+            <div
+              className={`color-button`}
+              style={{ "background-color": `${color}` }}
+              onClick={() => pickColor(color)}
+            >
+              {color}{" "}
+            </div>
+          );
         })}
-    </div>
+      </div>
     </>
-  )
-};
+  );
+}
 ```
