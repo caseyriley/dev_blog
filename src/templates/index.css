@@ -1,5 +1,24 @@
 
 /* /////////////color button///////////// */
+.gradient {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.gradient span {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 20px;
+}
+.swatch-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid lightgrey;
+}
 
 .color-button {
   width: 150px;
@@ -15,7 +34,7 @@
   box-shadow: 4px 4px 6px 0px rgb(0, 0, 0, 0.3);
   text-shadow: 1px 1px 1px black;
   transform: translateY(0px);
-  margin-top: 20px;
+  margin: 5px;
   cursor: pointer;
 }
 

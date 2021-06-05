@@ -5,28 +5,60 @@ published: true
 cover: ./colors-ic.png
 ---
 
-A fun React component for changing colors I made while learning an application called Storybook :)
+A fun React component for making color gradients I made while learning an application called Storybook :) <br/> 
+Click on any color below, then click a second color. Keep clicking!
 
 ```jsx react-live
 function ColorButton() {
-  const [colorState, setColorState] = React.useState("red");
-
-  function nextColor() {
-    let color = colorState;
-    if (color === "red") color = "orange";
-    else if (color === "orange") color = "yellow";
-    else if (color === "yellow") color = "green";
-    else if (color === "green") color = "blue";
-    else if (color === "blue") color = "indigo";
-    else if (color === "indigo") color = "purple";
-    else color = "red";
-    setColorState(color);
+  const [colorState, setColorState] = React.useState("green");
+  const [indexState, setIndexState] = React.useState(0);
+  const [selectStateA, setSelectStateA] = React.useState("aqua")
+  const [selectStateB, setSelectStateB] = React.useState("lightpink")
+  const [pickerState, setPickerState] = React.useState(false)
+  function pickColor(color){
+    let state = !pickerState;
+    if (state) setSelectStateA(color)
+    else setSelectStateB(color)
+    setPickerState(state)
   }
+  let colors = React.useRef([
+    "white",
+    "silver",
+    "grey",
+    "black",
+    "red",
+    "maroon",
+    "yellow",
+    "olive",
+    "lime",
+    "green",
+    "aqua",
+    "teal",
+    "blue",
+    "navy",
+    "fuchsia",
+    "purple",
+    "mediumvioletred",
+    "deeppink",
+    "palevioletred",
+    "hotpink",
+    "lightpink",
+    "pink",
+  ]);
 
   return (
-    <div className={`color-button ${colorState}`} onClick={nextColor}>
-      Choose A Color
+    <>
+    <div className={"gradient"} style={{background: `linear-gradient(to right,  ${selectStateA} 0%, ${selectStateB} 100%)`}}><span>{selectStateA}</span>  <span>{selectStateB}</span></div>
+    <div className={"swatch-box"}>
+        {colors.current.map((color, index) => {
+          return ( 
+             
+                <div className={`color-button`} style={{'background-color': `${color}`}} onClick={()=>pickColor(color)}>{color} </div>
+              
+          )
+        })}
     </div>
-  );
-}
+    </>
+  )
+};
 ```
