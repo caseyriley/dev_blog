@@ -17,13 +17,6 @@ function VolumeUiSlider() {
 
   function changeVolume() {
     setVolumeState(volumeSlider.current.value);
-    vol = Number(volumeState) / 100;
-    if (vol > 0.98) {
-      vol = 1;
-    }
-    if (vol < 0.1) {
-      vol = 0;
-    }
   }
 
   React.useEffect(() => {
