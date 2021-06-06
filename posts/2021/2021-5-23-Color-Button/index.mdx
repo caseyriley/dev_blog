@@ -27,12 +27,10 @@ function ColorButton() {
     "silver",
     "grey",
     "black",
-    "red",
-    "maroon",
-    "yellow",
-    "olive",
-    "lime",
-    "green",
+
+
+
+
     "aqua",
     "teal",
     "blue",
@@ -105,7 +103,7 @@ function ColorButton() {
               style={{ "background-color": `${color}` }}
               onClick={() => pickColor(color)}
             >
-              {color}{" "}
+             <span>{color}</span> 
             </div>
           );
         })}
