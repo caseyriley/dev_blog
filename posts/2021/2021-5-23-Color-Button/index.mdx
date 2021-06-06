@@ -5,7 +5,7 @@ published: true
 cover: ./colors-ic.png
 ---
 
-A fun React component for making color gradients I made while learning an application called Storybook :) <br/>
+This is a fun React component for making color gradients. <br/>
 Click on any color below, then click a second color. Keep clicking! <br/>
 This is also a fun tool for learning all of CSS's built in color names.
 
@@ -23,66 +23,20 @@ function ColorButton() {
     setPickerState(state);
   }
   let colors = React.useRef([
-    "white",
-    "silver",
-    "grey",
-    "black",
-
-
-
-
-    "aqua",
-    "teal",
-    "blue",
-    "navy",
-    "fuchsia",
-    "purple",
-    "mediumvioletred",
-    "deeppink",
-    "palevioletred",
-    "hotpink",
-    "lightpink",
-    "pink",
-    "darkred",
-    "red",
-    "firebrick",
-    "crimson",
-    "indianred",
-    "lightcoral",
-    "salmon",
-    "darksalmon",
-    "lightsalmon",
-    "orangered",
-    "tomato",
-    "darkorange",
-    "coral",
-    "orange",
-    "darkkhaki",
-    "gold",
-    "khaki",
-    "peachpuff",
-    "yellow",
-    "moccasin",
-    "papayawhip",
-    "lightgoldenrodyellow",
-    "lemonchiffon",
-    "lightyellow",
-    "maroon",
-    "brown",
-    "saddlebrown",
-    "sienna",
-    "chocolate",
-    "peru",
-    "rosybrown",
-    "goldenrod",
-    "sandybrown",
-    "tan",
-    "burlywood",
-    "wheat",
-    "navajowhite",
-    "bisque",
-    "blanchedalmond",
-    "cornsilk", "darkgreen", "green", "darkolivegreen", "forestgreen", "seagreen", "olive", "olivedrab", "mediumseagreen", "limegreen", "lime", "springgreen", "mediumspringgreen", "darkseagreen", "mediumaquamarine", "yellowgreen", "chartreuse", "lightgreen", "greenyellow", "palegreen"
+    "white","silver","grey","black","mediumvioletred","deeppink","palevioletred","hotpink","lightpink","pink",
+    "darkred","red","firebrick","crimson","indianred","lightcoral","salmon","darksalmon","lightsalmon","orangered",
+    "tomato","darkorange","coral","orange","darkkhaki","gold","khaki","peachpuff","yellow","moccasin","papayawhip",
+    "lightgoldenrodyellow","lemonchiffon","lightyellow","maroon","brown","saddlebrown","sienna","chocolate",
+    "peru","rosybrown","goldenrod","sandybrown","tan","burlywood","wheat","navajowhite","bisque","blanchedalmond",
+    "cornsilk","darkgreen","green","darkolivegreen","forestgreen","seagreen","olive","olivedrab","mediumseagreen",
+    "limegreen","lime","springgreen","mediumspringgreen","darkseagreen","mediumaquamarine","yellowgreen","chartreuse",
+    "lightgreen","greenyellow","palegreen","indigo","rebeccapurple","purple","darkmagenta","darkviolet","darkslateblue",
+    "blueviolet","darkorchid","fuchsia","magenta","slateblue","mediumslateblue","mediumorchid","mediumpurple","orchid",
+    "violet","plum","thistle","lavender","teal","darkcyan","lightseagreen","cadetblue","darkturquoise","turquoise",
+    "aqua","cyan","aquamarine","paleturquoise","lightcyan","navy","darkblue","mediumblue","midnightblue","royalblue",
+    "steelblue","dodgerblue","deepskyblue","cornflowerblue","skyblue","lightskyblue","lightsteelblue","lightblue",
+    "powderblue","black","darkslategrey","dimgrey","slategrey","grey","lightslategrey","darkgrey","silver","lightgrey",
+    "gainsboro"
   ]);
 
   return (
@@ -103,7 +57,7 @@ function ColorButton() {
               style={{ "background-color": `${color}` }}
               onClick={() => pickColor(color)}
             >
-             <span>{color}</span> 
+              <span>{color}</span>
             </div>
           );
         })}
