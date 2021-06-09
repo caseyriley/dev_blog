@@ -52,6 +52,12 @@ export const Header = ({ siteTitle, siteDescription }) => (
         >
           Angelist
         </Link>
+        <Link 
+          className={"link"}
+          to="/about"
+          >
+            About
+          </Link>
       </div>
       <div className={"link-box-shadow"} />
     </div>
