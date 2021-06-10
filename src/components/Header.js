@@ -52,12 +52,12 @@ export const Header = ({ siteTitle, siteDescription, page }) => (
         >
           Angelist
         </Link>
-        <Link 
+        <Link
           className={"link"}
-          to={`/${page === "Home" ? "" :  page.toLowerCase()}`}
-          >
-            {page}
-          </Link>
+          to={`/${page === "Home" ? "" : page.toLowerCase()}`}
+        >
+          {page}
+        </Link>
       </div>
       <div className={"link-box-shadow"} />
     </div>
