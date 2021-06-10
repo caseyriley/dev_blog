@@ -11,7 +11,7 @@ const HeaderStyles = styled.header`
   margin: 20px 0px 20px 0px;
 `;
 
-export const Header = ({ siteTitle, siteDescription }) => (
+export const Header = ({ siteTitle, siteDescription, page }) => (
   <HeaderStyles>
     <div className={"header-position"}>
       <div className={"header-top"}>
@@ -54,9 +54,9 @@ export const Header = ({ siteTitle, siteDescription }) => (
         </Link>
         <Link 
           className={"link"}
-          to="/about"
+          to={`/${page === "Home" ? "" :  page.toLowerCase()}`}
           >
-            About
+            {page}
           </Link>
       </div>
       <div className={"link-box-shadow"} />

@@ -17,7 +17,7 @@ const AboutStyles = styled.main`
 const About = () => {
   return (
     <AboutStyles>
-        <Header />
+        <Header page={"Home"}/>
    
     </AboutStyles>
   );
