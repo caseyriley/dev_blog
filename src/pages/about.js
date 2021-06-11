@@ -162,7 +162,7 @@ const About = () => {
                 new technologies and that is clearly visible in my portfolio. A
                 brief glimpse at my solo projects include a user-customizable
                 music player, a NASA image/audio gallery, a coding blog with
-                interactive code examples, a coding multiple choice quiz, and an
+                interactive code examples, a multiple choice quiz app, and an
                 app for finding available appointment times.
               </p>
               <p>
