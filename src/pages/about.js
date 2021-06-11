@@ -94,11 +94,11 @@ const About = () => {
               <p>
                 Seeing my art people organically began to ask me to build them
                 websites. After making a handful of websites for friends on
-                platforms such as SquareSpace I began meeting some Software
-                Engineers.
+                platforms such as SquareSpace I began making friends with some
+                very interesting Software Engineers.
               </p>
               <p>
-                Through the stories of my new friends professional journeys I
+                Through the stories of my new friends professional journeys, I
                 began to dream myself on a Software Engineer path, and working
                 in an amazing culture. With a bag of new tricks I could change
                 the world.
@@ -120,24 +120,26 @@ const About = () => {
               </p>
               <p>
                 Soon after graduating App Academy I started volunteering for a
-                non-profit named Aranya Solutions. Aranya Solutions purpose is
+                non-profit named Aranya Solutions. Aranya Solution’s purpose is
                 to enrich the quality of life within targeted economically
                 challenged and developing areas such as Nepal, Uganda and Burma.
                 Aranya Solutions method is to assist communities to implement
                 environmentally friendly building and agricultural methods, life
                 skills workshops, local business development, leadership
-                training, education initiatives, and capacity building.
+                training, education initiatives, and capacity building. My
+                commitment level was only seven hours a week because I wanted to
+                focus on my solo projects and be able to go hard in my job hunt.
               </p>
               <p>
                 My decision to volunteer for Aranya Solutions was made a long
                 time before I even decided to study coding. My friend Katrina
                 Zavalney founded Aranya Solutions, and I had admired her work
-                for many years. Finally I was able to contribute and I got to
-                use my new skills.
+                for many years. Finally I was able to contribute to an epic
+                cause and I got to use my new skills.
               </p>
               <p>
                 I believe my contributions to Aranya Solutions helped us to get
-                more and larger donations.
+                more frequent and larger donations.
               </p>
               <p>
                 In May 2021 I began working as a Web Developer Intern at
@@ -149,20 +151,31 @@ const About = () => {
               <p>
                 Under the guidance of Ecomadic’s talented lead developer Amir
                 Goudarziha, I am learning from the best. Our tech stack is cool
-                too! We're using ReactJS, Redux, TypeScript, Python, Django,
+                too! We are using ReactJS, Redux, TypeScript, Python, Django,
                 Styled Components, and Storybook so far. Everyone at Ecomadic is
-                fun and exciting to work with. I wish this was my forever
-                position but forever is a long time anyway.
+                fun and exciting to work with. All our interactions are online
+                but I hope to meet them in person someday.
               </p>
               <p>
                 Most of my journey since graduating in October of 2020 has been
                 a deep dive into my solo projects. I have been hungry to learn
-                new technologies and that is clearly visible in my portfolio.
+                new technologies and that is clearly visible in my portfolio. A
+                brief glimpse at my solo projects include a user-customizable
+                music player, a NASA image/audio gallery, a coding blog with
+                interactive code examples, a coding multiple choice quiz, and an
+                app for finding available appointment times.
               </p>
               <p>
-                Almost every new person I meet has something to share about the
-                tech world. Our future revolves around the technologies we
-                embrace and the advancements we make. Let’s make good choices.
+                At almost every turn in life I meet a new person that has
+                something to share about the tech world. Simply stating that I
+                am a Software Engineer initiates stimulating conversations that
+                tend to look at the future and contemplate our collective
+                destiny.
+              </p>
+              <p>
+                What we will become and the quality of life we will share
+                revolves around the technologies we embrace and the advancements
+                we make. Let’s make good choices.
               </p>
               <p>Thank you for reading this!</p>
               <p>Sincerely,</p>
@@ -173,7 +186,7 @@ const About = () => {
         </AboutStyles>
       </Background>
     </>
-  )
-}
+  );
+};
 
 export default About;
