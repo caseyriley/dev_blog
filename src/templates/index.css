@@ -125,6 +125,8 @@
   position: relative;
   top: 30px;
   margin-bottom: 30px;
+  background-color: gainsboro;
+  border-radius: 10px;
 }
 .volume-display span {
   position: relative;
