@@ -53,7 +53,7 @@
   transform: translateY(2px);
 }
 /* /////////////////Color///////////////// */
-.red {
+/* .red {
   background-color: red;
   color: white;
 }
@@ -86,7 +86,7 @@
 .purple {
   background-color: purple;
   color: white;
-}
+} */
 
 /* /////////////like button////////////////// */
 
@@ -123,7 +123,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 50px;
+  top: 30px;
   margin-bottom: 30px;
 }
 .volume-display span {
