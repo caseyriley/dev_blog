@@ -8,7 +8,6 @@ const AppStyles = styled.main`
   height: 100vh;
   width: calc(100vw - 40px);
   overflow-y: scroll;
-  // background: linear-gradient(to bottom,  darkviolet 0%, mediumspringgreen 100%);
 `;
 
 export const Layout = ({ children }) => {
