@@ -15,7 +15,11 @@ export const Layout = ({ children }) => {
   return (
     <>
       <AppStyles>
-        <Header siteTitle={title} siteDescription={description} page={"About"} />
+        <Header
+          siteTitle={title}
+          siteDescription={description}
+          page={"About"}
+        />
         {children}
       </AppStyles>
     </>
