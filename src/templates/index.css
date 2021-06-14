@@ -118,7 +118,7 @@
 
 /* //////////////Mix Meld Volume Slider////////////// */
 .volume-display {
-  width: 100%;
+  width: 125px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,23 +128,16 @@
   margin-bottom: 30px;
   background-color: gainsboro;
   border-radius: 10px;
+  padding-top: 23px;
 }
 .volume-display span {
   position: relative;
-  left: -45px;
   color: blueviolet;
   font-size: 40px;
 }
-#volume-slider-c {
-  width: 125px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
 .control-2{
   position: relative;
+  left: 50px;
   width: 55px;
   display: flex;
   justify-content: center;
@@ -268,6 +261,11 @@ div.control-2 span.eq-1:after{
   height: 50px;
   margin-top: 30px;
 }
+
+/* div.control-2 span.eq-2{
+  position: relative;
+  top: -50px;
+} */
 
 div.control-2 span.eq-1 span.eq-level{
   margin-top: 80px;

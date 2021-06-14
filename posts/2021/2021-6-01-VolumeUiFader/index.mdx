@@ -30,30 +30,27 @@ function VolumeUiSlider() {
   }, [volumeState]);
 
   return (
-    <>
-      <div className={"volume-display"}>
-        <span>{volumeState}</span>
-
-        <div class="control-2">
-          <span className="eq eq-2">
-            <span className="eq-level" ref={volumeFader}>
-              <img src={"../images/texture.jpg"} alt="" />
-            </span>
+    <div className={"volume-display"}>
+      <span>{volumeState}</span>
+      <div class="control-2">
+        <span className="eq eq-2">
+          <span className="eq-level" ref={volumeFader}>
+            <img src={"../images/texture.jpg"} alt="" />
           </span>
-          <div className={"pl2-volume-level"} ref={volumeLevel}></div>
-          <input
-            id={"range-input"}
-            className={"pl2-slider-input"}
-            type={"range"}
-            min={"0"}
-            max={"100"}
-            step={"1"}
-            ref={volumeSlider}
-            onChange={changeVolume}
-          ></input>
-        </div>
+        </span>
+        <div className={"pl2-volume-level"} ref={volumeLevel}></div>
+        <input
+          id={"range-input"}
+          className={"pl2-slider-input"}
+          type={"range"}
+          min={"0"}
+          max={"100"}
+          step={"1"}
+          ref={volumeSlider}
+          onChange={changeVolume}
+        ></input>
       </div>
-    </>
+    </div>
   );
 }
 ```
