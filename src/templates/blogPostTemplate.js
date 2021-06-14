@@ -47,10 +47,11 @@ const TextWrapper = styled.div`
 
   p {
     border: 1px solid lightgrey;
-  border-radius: 10px;
+    border-radius: 10px;
     font-family: "Raleway", "Farro", sans-serif;
     padding: 20px 20px 20px 20px;
     background-color: gainsboro;
+    width:fit-content;
   }
 `;
 
