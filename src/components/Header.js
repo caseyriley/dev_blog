@@ -9,13 +9,26 @@ import "./index.css";
 const HeaderStyles = styled.header`
   font-family: "Raleway", "Farro", sans-serif;
   margin: 20px 0px 20px 0px;
+  .header-top {
+    // diplay: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: flex-start;
+    // p {
+    //   position: relative;
+    //   top: -20px;
+    // }
+    h1 {
+      margin: 0px 0px 20px 0px;
+    }
+  }
 `;
 
 export const Header = ({ siteTitle, siteDescription, page }) => (
   <HeaderStyles>
     <div className={"header-position"}>
       <div className={"header-top"}>
-        <Link className={"link"} to="/">
+        <Link className={"top-link"} to="/">
           <h1>{siteTitle}</h1>
           <p>{siteDescription}</p>
         </Link>

@@ -31,7 +31,6 @@ const Background = styled.main`
 `;
 
 const IndexWrapper = styled.main`
-
   font-family: "Raleway", "Farro", sans-serif;
   margin: 20px 0px 20px 0px;
   color: rgb(81, 240, 249);
@@ -42,20 +41,17 @@ const IndexWrapper = styled.main`
   align-items: center;
   p {
     margin: 0px 0px 20px 20px;
-    
   }
 `;
 
 const TextWrapper = styled.div`
-
-
   p {
     border: 1px solid lightgrey;
     border-radius: 10px;
     font-family: "Raleway", "Farro", sans-serif;
     padding: 20px 20px 20px 20px;
     background-color: gainsboro;
-    width:fit-content;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,42 +66,52 @@ const TextWrapper = styled.div`
   }
 `;
 
+const LinkBottom = styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 20px 0px 20px 0px;
+.link {
+  width: fit-content;
+}
+`;
+
 const blogPostTemplate = ({ data, pageContext }) => {
   const { frontmatter, body } = data.mdx;
   const { previous, next } = pageContext;
   return (
     <Background>
       <Layout>
-      {/* <Dump previous={previous}/>
+        {/* <Dump previous={previous}/>
       <Dump next={next}/> */}
-      <IndexWrapper>
-        <h1 class={"blog-title"}>{frontmatter.title}</h1>
-        <p>{frontmatter.date}</p>
-      </IndexWrapper>
-      <TextWrapper>
-      <MDXRenderer>{body}</MDXRenderer>
-      </TextWrapper>
-      
-      
-        {previous && (
-          <Link class={"link"} to={previous.fields.slug}>
-            <p>{previous.frontmatter.title}</p>
-          </Link>
-        )}
-      
+        <IndexWrapper>
+          <h1 class={"blog-title"}>{frontmatter.title}</h1>
+          <p>{frontmatter.date}</p>
+        </IndexWrapper>
+        <TextWrapper>
+          <MDXRenderer>{body}</MDXRenderer>
+        </TextWrapper>
 
-      {next === false ? null : (
-        <>
-          {next && (
-            <Link class={"link"} to={next.fields.slug}>
-              <p>{next.frontmatter.title}</p>
+        <LinkBottom>
+          {previous && (
+            <Link class={"link"} to={previous.fields.slug}>
+              <p>{previous.frontmatter.title}</p>
             </Link>
           )}
-        </>
-      )}
-    </Layout>
+
+          {next === false ? null : (
+            <>
+              {next && (
+                <Link class={"link"} to={next.fields.slug}>
+                  <p>{next.frontmatter.title}</p>
+                </Link>
+              )}
+            </>
+          )}
+        </LinkBottom>
+      </Layout>
     </Background>
-    
   );
 };
 export default blogPostTemplate;
