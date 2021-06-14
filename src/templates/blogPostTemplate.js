@@ -10,6 +10,7 @@ const Background = styled.main`
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(
@@ -36,6 +37,9 @@ const IndexWrapper = styled.main`
   color: rgb(81, 240, 249);
   text-shadow: 1px 1px 2px black;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   p {
     margin: 0px 0px 20px 20px;
     
@@ -52,6 +56,17 @@ const TextWrapper = styled.div`
     padding: 20px 20px 20px 20px;
     background-color: gainsboro;
     width:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &:nth-child(3) {
+    // width: fit-content !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `;
 

@@ -315,3 +315,11 @@ div.control-2 span.eq-3 span.eq-level{
   text-shadow: 0 0 10px rgba(0,0,0,1);
   transform: rotate(-90deg);
 }
+
+/* textarea {
+  width: fit-content !important;
+} */
+pre {
+  width: fit-content !important;
+  /* margin-right: 0px !important; */
+}

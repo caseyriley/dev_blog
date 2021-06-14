@@ -19,6 +19,7 @@ const Pre = styled.pre`
   }
   font-family: "Courier New", Courier, monospace;
   position: relative;
+  // width: fit-content;
 `;
 
 const LineNo = styled.span`
