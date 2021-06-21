@@ -3,16 +3,14 @@ const path = require(`path`);
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
-  const blogPostTemplate = path.resolve(
-    'src/templates/blogPostTemplate.js'
-  );
+  const blogPostTemplate = path.resolve("src/templates/blogPostTemplate.js");
 
   return graphql(`
     {
-      allMdx (
-        sort: {fields: [frontmatter___date], order: DESC}
-        filter: {frontmatter: {published: {eq: true}}}
-      ){
+      allMdx(
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: { frontmatter: { published: { eq: true } } }
+      ) {
         nodes {
           fields {
             slug
@@ -23,7 +21,7 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       throw result.errors;
     }
@@ -31,10 +29,9 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMdx.nodes;
 
     // create page for each mdx file
-    posts.forEach((post, index)=> {
-      const previous =
-        index === posts.length - 1 ? null : posts[index + 1];
-      const next = index === 0 ? null : posts[index -1];
+    posts.forEach((post, index) => {
+      const previous = index === posts.length - 1 ? null : posts[index + 1];
+      const next = index === 0 ? null : posts[index - 1];
 
       createPage({
         path: post.fields.slug,
