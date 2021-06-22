@@ -87,7 +87,7 @@ const About = () => {
               </p>
               <p>
                 Originally from Corvallis, Oregon, USA I have always been
-                interested in forms of expression and got into Web Development
+                interested in whatever art mediums I could get my hands on and got into Web Development
                 through my interest in digital art software such as Adobe
                 Photoshop, Adobe Illustrator, and Zbrush.
               </p>
@@ -104,7 +104,7 @@ const About = () => {
                 the world.
               </p>
               <p>
-                After much aplying I got accepted to a Full Stack Software
+                After much applying I got accepted to a Full Stack Software
                 Engineer Coding Bootcamp known as App Academy. There were other
                 bootcamps that accepted me and even offered me scholarships and
                 grants but App Academy offered me the human connection I was
