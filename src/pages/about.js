@@ -86,7 +86,7 @@ const About = () => {
                 to write a little about myself.
               </p>
               <p>
-                Originally from Corvallis Oregon USA I have always been
+                Originally from Corvallis, Oregon, USA I have always been
                 interested in forms of expression and got into Web Development
                 through my interest in digital art software such as Adobe
                 Photoshop, Adobe Illustrator, and Zbrush.
