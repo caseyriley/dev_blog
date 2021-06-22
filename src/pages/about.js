@@ -152,7 +152,7 @@ const About = () => {
                 Under the guidance of Ecomadic’s talented lead developer Amir
                 Goudarziha, I am learning from the best. Our tech stack is cool
                 too! We are using ReactJS, Redux, TypeScript, Python, Django,
-                Styled Components, and Storybook so far. Everyone at Ecomadic is
+                Styled Components, Ant Design, and Storybook so far. Everyone at Ecomadic is
                 fun and exciting to work with. All our interactions are online
                 but I hope to meet them in person someday.
               </p>
