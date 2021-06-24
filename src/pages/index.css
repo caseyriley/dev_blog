@@ -22,6 +22,7 @@ body {
 }
 .post-image {
   margin: 20px 0px 0px 0px;
+  border: 30px dashed yellow;
 }
 
 .post-img {

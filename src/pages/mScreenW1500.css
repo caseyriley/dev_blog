@@ -1,4 +1,8 @@
 @media screen and (max-width: 1500px){
+  .post-image {
+    width: 400px;
+    border: 30px dashed cyan;
+  }
   .post-wrapper {
     max-width: 1000px;
     width: 100%;
