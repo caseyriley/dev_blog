@@ -30,7 +30,7 @@ const handleSubmit = async () => {
 & how I get that user.
 
 ```jsx
-useEffect(() => {
+ ct(() => {
   const getCurrentUser = async () => {
     const token = window.localStorage.getItem("auth_token");
     const response = await fetch(`${API_URL}/users/token`, {
