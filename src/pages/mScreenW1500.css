@@ -7,6 +7,12 @@
     max-width: 1000px;
     width: 100%;
     
-  
   }
+  .blog-title {
+    font-size: 40px;
+  }
+  .blog-p {
+    font-size: 25px;
+  }
+
 }
