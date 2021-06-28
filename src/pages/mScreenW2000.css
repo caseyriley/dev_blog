@@ -1,17 +1,30 @@
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 2000px){
+
+
+
+
+
+
+  .post-wrapper {
+    max-width: 1500px;
+    width: 100%;
+    
+  }
+  .link-box {
+    max-width: 1500px;
+    height: 50px;
+    font-size: 25px;
+  }
+  /* ////////Copied//////// */
   .app-styles {
     margin: 0px 20px 20px 20px;
 
   }
   .post-image {
     width: 400px;
-    border: 30px dashed cyan;
+    border: 30px dashed purple;
   }
-  .post-wrapper {
-    max-width: 1000px;
-    width: 100%;
-    
-  }
+
   .header-position {
 
     justify-content: flex-start;
@@ -25,11 +38,7 @@
     font-size: 25px;
   }
 
-  .link-box {
-    max-width: 1000px;
-    height: 50px;
-    font-size: 25px;
-  }
+
   .top-link {
     font-size: 25px;
   }

@@ -6,8 +6,10 @@ import styled from "styled-components";
 import { Layout } from "../components/Layout";
 
 import "./index.css";
+import "./mScreenW2000.css";
 import "./mScreenW1500.css";
 import "./mScreenW1000.css";
+
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Farro:wght@500&family=Raleway&display=swap');
