@@ -22,7 +22,7 @@ body {
 }
 .post-image {
   margin: 20px 0px 0px 0px;
-  border: 30px dashed yellow;
+  /* border: 30px dashed yellow; */
 }
 
 .post-img {
@@ -67,4 +67,24 @@ body {
 .index-wrapper{
   font-family: "Raleway", "Farro", sans-serif;
   margin: 20px 0px 20px 0px;
+}
+/* /////////blogPostTemplate//////////// */
+.text-wrapper p {
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  font-family: "Raleway", "Farro", sans-serif;
+  padding: 20px 20px 20px 20px;
+  background-color: gainsboro;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-wrapper:nth-child(3) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

@@ -45,25 +45,25 @@ const IndexWrapper = styled.main`
 `;
 
 const TextWrapper = styled.div`
-  p {
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    font-family: "Raleway", "Farro", sans-serif;
-    padding: 20px 20px 20px 20px;
-    background-color: gainsboro;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  &:nth-child(3) {
-    // width: fit-content !important;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  // p {
+  //   border: 1px solid lightgrey;
+  //   border-radius: 10px;
+  //   font-family: "Raleway", "Farro", sans-serif;
+  //   padding: 20px 20px 20px 20px;
+  //   background-color: gainsboro;
+  //   width: fit-content;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+  // &:nth-child(3) {
+  //   // width: fit-content !important;
+  //   width: 100%;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
 `;
 
 const LinkBottom = styled.div`
@@ -89,9 +89,9 @@ const blogPostTemplate = ({ data, pageContext }) => {
           <h1 class={"blog-title"}>{frontmatter.title}</h1>
           <p>{frontmatter.date}</p>
         </IndexWrapper>
-        <TextWrapper>
+        <div className={"text-wrapper"}>
           <MDXRenderer>{body}</MDXRenderer>
-        </TextWrapper>
+        </div>
 
         <LinkBottom>
           {previous && (
