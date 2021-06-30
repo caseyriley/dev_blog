@@ -44,28 +44,6 @@ const IndexWrapper = styled.main`
   }
 `;
 
-const TextWrapper = styled.div`
-  // p {
-  //   border: 1px solid lightgrey;
-  //   border-radius: 10px;
-  //   font-family: "Raleway", "Farro", sans-serif;
-  //   padding: 20px 20px 20px 20px;
-  //   background-color: gainsboro;
-  //   width: fit-content;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  // }
-  // &:nth-child(3) {
-  //   // width: fit-content !important;
-  //   width: 100%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-`;
-
 const LinkBottom = styled.div`
 width: 100%;
 display: flex;
@@ -81,7 +59,7 @@ const blogPostTemplate = ({ data, pageContext }) => {
   const { frontmatter, body } = data.mdx;
   const { previous, next } = pageContext;
   return (
-    <Background>
+    // <Background>
       <Layout>
         {/* <Dump previous={previous}/>
       <Dump next={next}/> */}
@@ -111,7 +89,7 @@ const blogPostTemplate = ({ data, pageContext }) => {
           )}
         </LinkBottom>
       </Layout>
-    </Background>
+    // </Background>
   );
 };
 export default blogPostTemplate;
