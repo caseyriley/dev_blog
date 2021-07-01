@@ -95,3 +95,38 @@ width: 100vw;
   align-items: center;
   justify-content: center;
 }
+
+/* ///////////////About////////////// */
+.text-width {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.paragraph-box {
+  height: min-content;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-emd;
+  position: relative;
+  margin: 0px 0px 80px 0px;
+}
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid lightgrey;
+  font-size: 20px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 10px;
+  background-color: white;
+  z-index: 2;
+}
+.paragraphs p {
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  font-size: 20px;
+}

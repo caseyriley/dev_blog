@@ -36,7 +36,6 @@
 .text-wrapper p,
 .blog-date {
   font-size: 25px;
-  border: 4px solid orange;
 }
 
 
@@ -46,5 +45,15 @@
 pre {
   font-size: 13px !important;
 }
+/* ///////////////About////////////// */
+
+.paragraph-box {
+  width: 1000px;
+}
+.paragraphs p {
+  font-size: 25px;
+}
+
+
 
 }
