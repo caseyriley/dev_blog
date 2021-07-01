@@ -23,7 +23,8 @@
   .blog-title {
     font-size: 50px;
   }
-  .blog-p {
+  .blog-p,
+  .link p {
     font-size: 35px;
   }
   .top-link {

@@ -21,7 +21,8 @@
   .blog-title {
     font-size: 30px;
   }
-  .blog-p {
+  .blog-p,
+  .link p {
     font-size: 20px;
   }
 

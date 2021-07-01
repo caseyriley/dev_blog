@@ -20,7 +20,8 @@
   .blog-title {
     font-size: 40px;
   }
-  .blog-p {
+  .blog-p,
+  .link p {
     font-size: 25px;
   }
 
