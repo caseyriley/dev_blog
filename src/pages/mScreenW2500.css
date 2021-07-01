@@ -44,9 +44,10 @@
     }
     
     
-    .link p{
+    /* .link p{
       font-size: 50px;
-    }
+      color: blue;
+    } */
   
     pre {
       font-size: 28px !important;
