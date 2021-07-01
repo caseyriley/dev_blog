@@ -32,5 +32,19 @@
   .top-link {
     font-size: 25px;
   }
+  /* //////////////bloPostTemplate/////////////// */
+.text-wrapper p,
+.blog-date {
+  font-size: 25px;
+  border: 4px solid orange;
+}
+
+
+.link p{
+  font-size: 40px;
+}
+pre {
+  font-size: 13px !important;
+}
 
 }

@@ -3,6 +3,7 @@
   height: 100vh;
   width: calc(100vw - 40px);
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .header-position {
   display: flex;

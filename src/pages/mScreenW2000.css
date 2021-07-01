@@ -40,9 +40,21 @@
     left: 15%;
   }
 
+  /* //////////////bloPostTemplate/////////////// */
+  .text-wrapper p,
+  .blog-date {
+    font-size: 30px;
+    border: 4px solid yellow;
+  }
+  
+  
+  .link p{
+    font-size: 45px;
+  }
 
-
-
+  pre {
+    font-size: 20px !important;
+  }
 
 
 }

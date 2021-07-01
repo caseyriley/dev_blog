@@ -59,13 +59,13 @@ const blogPostTemplate = ({ data, pageContext }) => {
   const { frontmatter, body } = data.mdx;
   const { previous, next } = pageContext;
   return (
-    // <Background>
+    <Background>
       <Layout>
         {/* <Dump previous={previous}/>
       <Dump next={next}/> */}
         <IndexWrapper>
           <h1 class={"blog-title"}>{frontmatter.title}</h1>
-          <p>{frontmatter.date}</p>
+          <p class={"blog-date"}>{frontmatter.date}</p>
         </IndexWrapper>
         <div className={"text-wrapper"}>
           <MDXRenderer>{body}</MDXRenderer>
@@ -89,7 +89,7 @@ const blogPostTemplate = ({ data, pageContext }) => {
           )}
         </LinkBottom>
       </Layout>
-    // </Background>
+    </Background>
   );
 };
 export default blogPostTemplate;
