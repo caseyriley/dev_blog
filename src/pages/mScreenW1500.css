@@ -1,4 +1,4 @@
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1500px) {
   .app-styles {
     margin: 0px 20px 20px 20px;
   }
@@ -9,10 +9,8 @@
   .post-wrapper {
     max-width: 1000px;
     width: 100%;
-    
   }
   .header-position {
-
     justify-content: flex-start;
     position: relative;
     left: 15%;
@@ -34,27 +32,23 @@
     font-size: 25px;
   }
   /* //////////////bloPostTemplate/////////////// */
-.text-wrapper p,
-.blog-date {
-  font-size: 25px;
-}
+  .text-wrapper p,
+  .blog-date {
+    font-size: 25px;
+  }
 
-
-/* .link p{
+  /* .link p{
   font-size: 40px;
 } */
-pre {
-  font-size: 13px !important;
-}
-/* ///////////////About////////////// */
+  pre {
+    font-size: 13px !important;
+  }
+  /* ///////////////About////////////// */
 
-.paragraph-box {
-  width: 1000px;
-}
-.paragraphs p {
-  font-size: 25px;
-}
-
-
-
+  .paragraph-box {
+    width: 1000px;
+  }
+  .paragraphs p {
+    font-size: 25px;
+  }
 }

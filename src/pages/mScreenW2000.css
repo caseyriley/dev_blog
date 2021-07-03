@@ -1,14 +1,7 @@
-@media screen and (max-width: 2000px){
-
-
-
-
-
-
+@media screen and (max-width: 2000px) {
   .post-wrapper {
     max-width: 1500px;
     width: 100%;
-    
   }
   .link-box {
     max-width: 1500px;
@@ -46,8 +39,7 @@
   .blog-date {
     font-size: 30px;
   }
-  
-  
+
   /* .link p{
     font-size: 45px;
   } */
@@ -58,11 +50,10 @@
 
   /* ///////////////About////////////// */
 
-.paragraph-box {
-  width: 1500px;
-}
-.paragraphs p {
-  font-size: 30px;
-}
-
+  .paragraph-box {
+    width: 1500px;
+  }
+  .paragraphs p {
+    font-size: 30px;
+  }
 }
