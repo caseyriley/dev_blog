@@ -45,14 +45,14 @@ const IndexWrapper = styled.main`
 `;
 
 const LinkBottom = styled.div`
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 20px 0px 20px 0px;
-.link {
-  width: fit-content;
-}
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+  .link {
+    width: fit-content;
+  }
 `;
 
 const blogPostTemplate = ({ data, pageContext }) => {

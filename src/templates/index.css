@@ -1,11 +1,9 @@
-
 /* /////////////gradient selector///////////// */
 .gradient {
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
-
 }
 .gradient span {
   font-size: 50px;
@@ -41,7 +39,7 @@
   justify-content: center;
   align-items: center;
 }
-.color-button span{
+.color-button span {
   position: relative;
   top: -1px;
 }
@@ -64,8 +62,8 @@
   background-color: rgb(234, 214, 234);
   font-size: 30px;
   cursor: pointer;
-  transition: all .5s;
-  box-shadow: 1px 2px 6px 0px rgb(0, 0, 0, .4);
+  transition: all 0.5s;
+  box-shadow: 1px 2px 6px 0px rgb(0, 0, 0, 0.4);
   position: relative;
   transform: translateX(-50%);
   margin-left: 50%;
@@ -75,13 +73,11 @@
   font-size: 35px;
   border-color: orange;
   background-color: rgb(148, 16, 196);
-
 }
 
 .like-count {
-  font-size: 22px; 
+  font-size: 22px;
   color: purple;
-
 }
 
 /* //////////////Mix Meld Volume Slider////////////// */
@@ -103,7 +99,7 @@
   color: blueviolet;
   font-size: 40px;
 }
-.control-2{
+.control-2 {
   position: relative;
   left: 50px;
   width: 55px;
@@ -126,7 +122,7 @@
   cursor: pointer;
 }
 
-div.control-2 span.eq{
+div.control-2 span.eq {
   position: relative;
   top: 50px;
   left: 22px;
@@ -134,18 +130,17 @@ div.control-2 span.eq{
   height: 100px;
   display: inline-block;
   border-radius: 100px;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   margin-right: 45px;
-  box-shadow: inset 0 0 65px rgba(0,0,0,0.4),
-              inset 0 10px 15px rgba(0,0,0,0.3),
-              inset 0 -10px 15px rgba(0,0,0,0.3),
-              0 0 5px rgba(0,0,0,0.7);
+  box-shadow: inset 0 0 65px rgba(0, 0, 0, 0.4),
+    inset 0 10px 15px rgba(0, 0, 0, 0.3), inset 0 -10px 15px rgba(0, 0, 0, 0.3),
+    0 0 5px rgba(0, 0, 0, 0.7);
 }
 
 div.control-2 span.eq:before,
-div.control-2 span.eq:after{
+div.control-2 span.eq:after {
   position: absolute;
-  content: '';
+  content: "";
   width: 3px;
   display: inline-block;
   left: 35%;
@@ -154,16 +149,15 @@ div.control-2 span.eq:after{
   border-radius: 100px;
 }
 
-div.control-2 span.eq:before
-{
+div.control-2 span.eq:before {
   position: relative;
   left: 3px;
   margin: 0px 0px 0px 0px;
   z-index: 8;
   height: 80px;
-  box-shadow: inset 0 0 15px rgba(0,0,0,0.7),
-              inset 0 7px 10px -2px rgba(0,0,0,0.5),
-              inset 0 -7px 10px -2px rgba(0,0,0,0.5);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7),
+    inset 0 7px 10px -2px rgba(0, 0, 0, 0.5),
+    inset 0 -7px 10px -2px rgba(0, 0, 0, 0.5);
 }
 .pl2-volume-level {
   position: absolute;
@@ -174,11 +168,10 @@ div.control-2 span.eq:before
   width: 2px;
   background: #05d4f4;
   margin: 0px 0px 0px 0px;
-  box-shadow: inset 0 0 25px rgba(255,255,255,0.5),
-              0 0 10px #05d4f4;
+  box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.5), 0 0 10px #05d4f4;
 }
 
-span.eq span.eq-level{
+span.eq span.eq-level {
   position: absolute;
   width: 20px;
   height: 30px;
@@ -190,42 +183,39 @@ span.eq span.eq-level{
   border-radius: 100px;
   overflow: hidden;
   z-index: 10;
-  box-shadow: inset 0 5px 5px -3px rgba(255,255,255,0.4),
-              inset 0 -8px 8px -3px rgba(0,0,0,0.4),
-              inset 0 0 55px rgba(0,0,0,0.6),
-              -6px 0 5px -5px rgba(0,0,0,0.4),
-              7px 0 5px -3px rgba(0,0,0,0.4),
-              0 5px 5px -4px rgba(0,0,0,0.7),
-              0 -8px 7px -4px rgba(0,0,0,0.7);
+  box-shadow: inset 0 5px 5px -3px rgba(255, 255, 255, 0.4),
+    inset 0 -8px 8px -3px rgba(0, 0, 0, 0.4), inset 0 0 55px rgba(0, 0, 0, 0.6),
+    -6px 0 5px -5px rgba(0, 0, 0, 0.4), 7px 0 5px -3px rgba(0, 0, 0, 0.4),
+    0 5px 5px -4px rgba(0, 0, 0, 0.7), 0 -8px 7px -4px rgba(0, 0, 0, 0.7);
 }
 
 span.eq span.eq-level:before,
-span.eq span.eq-level:after{
+span.eq span.eq-level:after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   display: inline-block;
 }
 
-span.eq span.eq-level:before{
+span.eq span.eq-level:before {
   top: 50%;
   margin-top: -2px;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
-span.eq span.eq-level:after{
+span.eq span.eq-level:after {
   top: 50%;
-  background: rgba(255,255,255,0.1);
-  box-shadow: 0 1px 3px rgba(255,255,255,0.01);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.01);
 }
 
-span.eq span.eq-level img{
+span.eq span.eq-level img {
   position: absolute;
   opacity: 0.2;
 }
 
-div.control-2 span.eq-1:after{
+div.control-2 span.eq-1:after {
   height: 50px;
   margin-top: 30px;
 }
@@ -235,19 +225,19 @@ div.control-2 span.eq-1:after{
   top: -50px;
 } */
 
-div.control-2 span.eq-1 span.eq-level{
+div.control-2 span.eq-1 span.eq-level {
   margin-top: 80px;
 }
-div.control-2 span.eq-2 span.eq-level{
+div.control-2 span.eq-2 span.eq-level {
   margin-top: 125px;
 }
 
-div.control-2 span.eq-3:after{
+div.control-2 span.eq-3:after {
   height: 120px;
   margin-top: -40px;
 }
 
-div.control-2 span.eq-3 span.eq-level{
+div.control-2 span.eq-3 span.eq-level {
   margin-top: 35px;
 }
 
@@ -258,11 +248,11 @@ div.control-2 span.eq-3 span.eq-level{
   top: 0;
   margin: -15px 0px 0px -5px;
   text-align: center;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   font-weight: 100;
   letter-spacing: 1px;
-  text-shadow: 0 0 10px rgba(0,0,0,1);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
   transform: rotate(-90deg);
 }
 
@@ -274,11 +264,11 @@ div.control-2 span.eq-3 span.eq-level{
   margin: 0px 0px 0px -5px;
   margin-bottom: -48px;
   text-align: center;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   font-weight: 100;
   letter-spacing: 1px;
-  text-shadow: 0 0 10px rgba(0,0,0,1);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
   transform: rotate(-90deg);
 }
 
