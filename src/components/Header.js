@@ -42,7 +42,7 @@ export const Header = ({ siteTitle, siteDescription, page }) => (
           to="https://caseyriley.github.io/"
           target="_blank"
         >
-          My Portfolio Site
+          <span className={"portfolio"}>My</span> Portfolio <span className={"portfolio"}>Site</span>
         </Link>
         <Link
           className={"link"}

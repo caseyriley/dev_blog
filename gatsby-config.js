@@ -1,6 +1,6 @@
 const siteMetadata = {
   title: `Code Journey`,
-  description: `Hi welcome to Casey Riley's coding blog.`,
+  description: `Welcome to Casey's coding blog.`,
 };
 
 module.exports = {
