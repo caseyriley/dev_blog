@@ -11,6 +11,7 @@ import "./mScreenW2500.css";
 import "./mScreenW2000.css";
 import "./mScreenW1500.css";
 import "./mScreenW1000.css";
+import "./mScreenW600.css";
 
 <style>
   @import

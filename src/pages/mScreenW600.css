@@ -1,0 +1,10 @@
+@media screen and (max-width: 600px){
+  .blog-title {
+    font-size: 28px;
+  }
+  .blog-p,
+  .link p {
+    font-size: 18px;
+    color: green;
+  }
+}

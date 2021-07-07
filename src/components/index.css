@@ -76,7 +76,7 @@
   border-radius: 5px;
 }
 
-@media screen and (max-width: 740px) {
+/* @media screen and (max-width: 740px) {
   .header-top {
     max-width: 100%;
     align-items: center;
@@ -85,4 +85,4 @@
   .header-position {
     justify-content: flex-start;
   }
-}
+} */
