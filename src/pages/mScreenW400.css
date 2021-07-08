@@ -16,5 +16,16 @@
   .link p {
     font-size: 14px;
   }
+  /* //////////////bloPostTemplate/////////////// */
+  .text-wrapper p,
+  .blog-date {
+    font-size: 14px;
+  }
+  /* .link p{
+  font-size: 35px;
+} */
+  /* pre {
+    font-size: 10px !important;
+  } */
 
 }

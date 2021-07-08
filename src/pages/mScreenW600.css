@@ -12,4 +12,15 @@
   .top-link {
     font-size: 22px;
   }
+    /* //////////////bloPostTemplate/////////////// */
+    .text-wrapper p,
+    .blog-date {
+      font-size: 18px;
+    }
+    /* .link p{
+    font-size: 35px;
+  } */
+    /* pre {
+      font-size: 10px !important;
+    } */
 }

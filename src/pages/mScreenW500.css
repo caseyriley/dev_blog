@@ -13,4 +13,15 @@
   .top-link {
     font-size: 16px;
   }
+      /* //////////////bloPostTemplate/////////////// */
+      .text-wrapper p,
+      .blog-date {
+        font-size: 16px;
+      }
+      /* .link p{
+      font-size: 35px;
+    } */
+      /* pre {
+        font-size: 10px !important;
+      } */
 }
