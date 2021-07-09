@@ -68,7 +68,9 @@ const blogPostTemplate = ({ data, pageContext }) => {
           <p class={"blog-date"}>{frontmatter.date}</p>
         </IndexWrapper>
         <div className={"text-wrapper"}>
-          <MDXRenderer>{body}</MDXRenderer>
+          {/* <div className={"scroll-box"}> */}
+            <MDXRenderer>{body}</MDXRenderer>
+          {/* </div> */}
         </div>
 
         <LinkBottom>

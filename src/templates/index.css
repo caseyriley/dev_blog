@@ -275,3 +275,9 @@ div.control-2 span.eq-3 span.eq-level {
 pre {
   width: fit-content !important;
 }
+
+.scroll-box{
+  border: 5px solid lightgreen;
+  overflow-x: scroll;
+  width: 80vw;
+}
