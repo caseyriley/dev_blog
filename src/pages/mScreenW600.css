@@ -11,6 +11,8 @@
   }
   .top-link {
     font-size: 22px;
+    min-width: 370px;
+    border: 1px solid lightblue;
   }
     /* //////////////bloPostTemplate/////////////// */
     .text-wrapper p,

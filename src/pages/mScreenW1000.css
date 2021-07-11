@@ -24,6 +24,7 @@
     font-size: 20px;
   }
 
+  
   .link-box {
     max-width: 700px;
     height: 35px;
@@ -31,7 +32,15 @@
   }
   .top-link {
     font-size: 25px;
+    min-width: 370px;
+    border: 1px solid blue;
   }
+  /* .lottie:nth-child(1){
+    transform: scale(25%);
+  }
+  .lottie:nth-child(2){
+    transform: scale(25%);
+  } */
 
   /* //////////////bloPostTemplate/////////////// */
   .text-wrapper p,

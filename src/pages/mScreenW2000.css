@@ -22,6 +22,8 @@
   }
   .top-link {
     font-size: 35px;
+    min-width: 530px;
+    border: 1px solid yellowgreen;
   }
   /* ////////Copied//////// */
   .app-styles {

@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Header } from "../components/Header";
 import "./index.css";
-import Lottie from "react-lottie";
-import animationData from "../assets/67724-isometric-falling-blocks.json";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Farro:wght@500&family=Raleway&display=swap');
@@ -49,24 +47,12 @@ const AboutStyles = styled.main`
   }
 `;
 
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: animationData,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
-
 const About = () => {
   return (
     <>
       <Background>
         <AboutStyles>
           <Header page={"Home"} />
-          <div>
-            <Lottie options={defaultOptions} height={400} width={400} />
-          </div>
           <div className={"text-width"}>
             <div className={"paragraph-box"}>
               <div className={"paragraphs"}>
