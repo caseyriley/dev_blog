@@ -12,6 +12,10 @@
   }
   .top-link {
     font-size: 16px;
+    left: 0px !important;
+  }
+  .lottie {
+    display: none;
   }
       /* //////////////bloPostTemplate/////////////// */
       .text-wrapper p,

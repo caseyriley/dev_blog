@@ -12,7 +12,9 @@
   .top-link {
     font-size: 22px;
     min-width: 370px;
-    border: 1px solid lightblue;
+  }
+  .lottie {
+    transform: scale(15%);
   }
     /* //////////////bloPostTemplate/////////////// */
     .text-wrapper p,

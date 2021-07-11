@@ -6,12 +6,14 @@ import styled from "styled-components";
 import { Layout } from "../components/Layout";
 
 import "./index.css";
-import "./mScreenW3000.css";
+import "./mScreenW4000.css";
 import "./mScreenW2500.css";
 import "./mScreenW2000.css";
 import "./mScreenW1500.css";
 import "./mScreenW1000.css";
 import "./mScreenW600.css";
+import "./mScreenW700.css";
+import "./mScreenW800.css";
 import "./mScreenW500.css";
 import "./mScreenW400.css";
 

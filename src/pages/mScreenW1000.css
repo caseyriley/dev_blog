@@ -33,7 +33,7 @@
   .top-link {
     font-size: 25px;
     min-width: 370px;
-    border: 1px solid blue;
+    left: -300px;
   }
   /* .lottie:nth-child(1){
     transform: scale(25%);

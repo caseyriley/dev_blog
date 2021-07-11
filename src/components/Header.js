@@ -41,10 +41,10 @@ export const Header = ({ siteTitle, siteDescription, page }) => (
         <Link className={"top-link"} to="/">
           <h1>{siteTitle}</h1>
           <p>{siteDescription}</p>
+          <div className={"lottie"}>
+            <Lottie options={defaultOptions} height={400} width={400} />
+          </div>
         </Link>
-        <div className={"lottie"}>
-          <Lottie options={defaultOptions} height={400} width={400} />
-        </div>
       </div>
     </div>
 
@@ -55,7 +55,8 @@ export const Header = ({ siteTitle, siteDescription, page }) => (
           to="https://caseyriley.github.io/"
           target="_blank"
         >
-          <span className={"portfolio"}>My</span> Portfolio <span className={"portfolio"}>Site</span>
+          <span className={"portfolio"}>My</span> Portfolio{" "}
+          <span className={"portfolio"}>Site</span>
         </Link>
         <Link
           className={"link"}
