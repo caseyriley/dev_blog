@@ -43,19 +43,6 @@ const Background = styled.main`
   );
 `;
 
-// const IndexWrapper = styled.main`
-//   font-family: "Raleway", "Farro", sans-serif;
-//   margin: 20px 0px 20px 0px;
-// `;
-
-// const PostWrapper = styled.div`
-//   border: 2px solid green;
-// `;
-
-// const Image = styled(Img)`
-//   border-radius: 5px;
-// `;
-
 const indexComponent = ({ data }) => {
   console.log("data", data);
   return (

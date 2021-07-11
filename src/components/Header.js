@@ -2,6 +2,8 @@ import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 import "./index.css";
+import Lottie from "react-lottie";
+import animationData from "../assets/67724-isometric-falling-blocks.json";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Farro:wght@500&family=Raleway&display=swap');
@@ -23,6 +25,14 @@ const HeaderStyles = styled.header`
     }
   }
 `;
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 
 export const Header = ({ siteTitle, siteDescription, page }) => (
   <HeaderStyles>
@@ -32,6 +42,9 @@ export const Header = ({ siteTitle, siteDescription, page }) => (
           <h1>{siteTitle}</h1>
           <p>{siteDescription}</p>
         </Link>
+        <div className={"lottie"}>
+          <Lottie options={defaultOptions} height={400} width={400} />
+        </div>
       </div>
     </div>
 

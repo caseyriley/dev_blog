@@ -9,8 +9,6 @@ import animationData from "../assets/67724-isometric-falling-blocks.json";
   url('https://fonts.googleapis.com/css2?family=Farro:wght@500&family=Raleway&display=swap');
 </style>;
 
-/* <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> */
-
 const Background = styled.main`
   width: 100%;
   height: 100%;
@@ -56,20 +54,19 @@ const defaultOptions = {
   autoplay: true,
   animationData: animationData,
   rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice"
-  }
+    preserveAspectRatio: "xMidYMid slice",
+  },
 };
-
 
 const About = () => {
   return (
     <>
       <Background>
-        <div>
-          <Lottie options={defaultOptions} height={400} width={400} />
-        </div>
         <AboutStyles>
           <Header page={"Home"} />
+          <div>
+            <Lottie options={defaultOptions} height={400} width={400} />
+          </div>
           <div className={"text-width"}>
             <div className={"paragraph-box"}>
               <div className={"paragraphs"}>
