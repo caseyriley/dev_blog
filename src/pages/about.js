@@ -2,13 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { Header } from "../components/Header";
 import "./index.css";
-import Lottie from 'react-lottie';
-import animationData from '../assets/67724-isometric-falling-blocks.json';
+import Lottie from "react-lottie";
+import animationData from "../assets/67724-isometric-falling-blocks.json";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Farro:wght@500&family=Raleway&display=swap');
 </style>;
-{/* <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> */}
+
+/* <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> */
+
 const Background = styled.main`
   width: 100%;
   height: 100%;
@@ -49,23 +51,24 @@ const AboutStyles = styled.main`
   }
 `;
 
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice"
+  }
+};
+
+
 const About = () => {
   return (
     <>
       <Background>
-      <lottie
-            src="https://assets9.lottiefiles.com/packages/lf20_fmvhwsv9.json"
-            background="transparent"
-            speed="1"
-            style="width: 300px; height: 300px;"
-            loop
-            controls
-            autoplay
-          ></lottie>
+        <div>
+          <Lottie options={defaultOptions} height={400} width={400} />
+        </div>
         <AboutStyles>
-          
-
-
           <Header page={"Home"} />
           <div className={"text-width"}>
             <div className={"paragraph-box"}>
