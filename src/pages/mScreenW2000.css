@@ -3,6 +3,10 @@
     max-width: 1500px;
     width: 100%;
   }
+  .post-box__shadow {
+    max-width: calc(1500px - 70px);
+    width: calc(100% - 70px);
+  }
   .link-box {
     max-width: 1500px;
     height: 60px;

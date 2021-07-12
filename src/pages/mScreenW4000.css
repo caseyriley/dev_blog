@@ -5,6 +5,10 @@
     width: 100%;
     
   }
+  .post-box__shadow {
+    max-width: calc(2000px - 90px);
+    width: calc(100% - 90px);
+  }
   .link-box {
     max-width: 2000px;
     height: 80px;
