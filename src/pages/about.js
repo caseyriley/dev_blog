@@ -45,6 +45,9 @@ const AboutStyles = styled.main`
     pointer-events: none;
     border-radius: 10px;
   }
+  .lottie {
+    display: none;
+  }
 `;
 
 const About = () => {
