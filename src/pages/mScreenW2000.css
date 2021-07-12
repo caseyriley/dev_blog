@@ -15,7 +15,6 @@
   .post-image {
     width: 800px;
     height: auto;
-    /* border: 30px dashed purple; */
   }
   .blog-title {
     font-size: 50px;
@@ -44,10 +43,6 @@
   .blog-date {
     font-size: 30px;
   }
-
-  /* .link p{
-    font-size: 45px;
-  } */
 
   pre {
     font-size: 20px !important;

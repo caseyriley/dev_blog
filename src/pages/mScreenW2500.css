@@ -1,4 +1,4 @@
-@media screen and (max-width: 2500px){
+@media screen and (max-width: 2500px) {
   .post-wrapper {
     max-width: 2000px;
     width: 100%;
@@ -31,7 +31,6 @@
     /* border: 30px dashed Orange; */
   }
 
-
   .app-styles {
     margin: 0px 20px 20px 20px;
   }
@@ -42,28 +41,22 @@
     left: 15%;
   }
 
-    /* //////////////bloPostTemplate/////////////// */
-    .text-wrapper p,
-    .blog-date {
-      font-size: 35px;
-    }
-    
-    
-    /* .link p{
-      font-size: 50px;
-      color: blue;
-    } */
-  
-    pre {
-      font-size: 28px !important;
-    }
+  /* //////////////bloPostTemplate/////////////// */
+  .text-wrapper p,
+  .blog-date {
+    font-size: 35px;
+  }
 
-      /* ///////////////About////////////// */
+  pre {
+    font-size: 28px !important;
+  }
 
-.paragraph-box {
-  width: 2000px;
-}
-.paragraphs p {
-  font-size: 35px;
-}
+  /* ///////////////About////////////// */
+
+  .paragraph-box {
+    width: 2000px;
+  }
+  .paragraphs p {
+    font-size: 35px;
+  }
 }
