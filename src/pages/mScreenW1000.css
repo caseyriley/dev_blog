@@ -10,6 +10,10 @@
     max-width: 700px;
     width: 100%;
   }
+  .post-box__shadow {
+    max-width: calc(700px - 50px);
+    width: calc(100% - 50px);
+  }
   .header-position {
     display: flex;
     justify-content: center;
