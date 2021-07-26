@@ -5,6 +5,7 @@ import React from "react";
 import { Layout } from "../components/Layout";
 import styled from "styled-components";
 import "./index.css";
+import countryNames from './searchFilterData.js';
 
 const Background = styled.main`
   width: 100%;
@@ -56,7 +57,7 @@ const LinkBottom = styled.div`
 `;
 
 const blogPostTemplate = ({ data, pageContext }) => {
-  const { frontmatter, body } = data.mdx;
+  const { frontmatter, body, variables } = data.mdx;
   const { previous, next } = pageContext;
   return (
     <Background>
@@ -72,7 +73,7 @@ const blogPostTemplate = ({ data, pageContext }) => {
             <MDXRenderer>{body}</MDXRenderer>
           {/* </div> */}
         </div>
-
+        {console.log("variables++++++++++++++++++++++++++",variables)}
         <LinkBottom>
           {previous && (
             <Link className={"link"} to={previous.fields.slug}>
@@ -102,6 +103,11 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "YYYY MMMM Do")
+        variables {
+          internal {
+            content
+          }
+        }
       }
     }
   }
