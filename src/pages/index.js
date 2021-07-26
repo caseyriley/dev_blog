@@ -56,7 +56,7 @@ const indexComponent = ({ data }) => {
             // console.log("data.allMdx=======>",data.allMdx)
             // const image = frontmatter.cover.publicURL;
             <div key={id} className={"post-box"}>
-              <Link class={"link post-wrapper"} to={fields.slug}>
+              <Link className={"link post-wrapper"} to={fields.slug}>
                 {console.log(
                   "frontmatter.cover.childImageSharp.fixed=====>",
                   frontmatter.cover.publicURL

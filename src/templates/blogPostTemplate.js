@@ -64,8 +64,8 @@ const blogPostTemplate = ({ data, pageContext }) => {
         {/* <Dump previous={previous}/>
       <Dump next={next}/> */}
         <IndexWrapper>
-          <h1 class={"blog-title"}>{frontmatter.title}</h1>
-          <p class={"blog-date"}>{frontmatter.date}</p>
+          <h1 className={"blog-title"}>{frontmatter.title}</h1>
+          <p className={"blog-date"}>{frontmatter.date}</p>
         </IndexWrapper>
         <div className={"text-wrapper"}>
           {/* <div className={"scroll-box"}> */}
@@ -75,7 +75,7 @@ const blogPostTemplate = ({ data, pageContext }) => {
 
         <LinkBottom>
           {previous && (
-            <Link class={"link"} to={previous.fields.slug}>
+            <Link className={"link"} to={previous.fields.slug}>
               <p>{previous.frontmatter.title}</p>
             </Link>
           )}
@@ -83,7 +83,7 @@ const blogPostTemplate = ({ data, pageContext }) => {
           {next === false ? null : (
             <>
               {next && (
-                <Link class={"link"} to={next.fields.slug}>
+                <Link className={"link"} to={next.fields.slug}>
                   <p>{next.frontmatter.title}</p>
                 </Link>
               )}
