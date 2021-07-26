@@ -277,7 +277,7 @@ pre {
 }
 /* //////////////Collapsible-Eco-Filter///////////// */
 .explore-filter {
-  max-width: 300px;
+  min-width: 300px;
   width: 100%;
   border: 1px dashed lightgrey;
   border-radius: 6px;
@@ -341,18 +341,21 @@ pre {
   margin: 28px 20px 12px 0px;
   height: 8px;
   width: 8px;
-  /* background-image: url("../assets/x-icon.png"); */
+  background-image: url("../assets/x-icon.png");
   background-size: cover;
   position: absolute;
   right: 30px;
 }
 .down-outlined {
   height: 20px;
+  width: 20px;
   font-size: 10px;
   position: absolute;
   right: 20px;
   margin: 28px 0px 12px 20px;
   transition: all 1s;
+  background-image: url("../assets/Arrow-Down-icon.png");
+  background-size: cover;
 }
 .turnUp {
   transform: rotate(-180deg);
@@ -378,6 +381,8 @@ pre {
   width: 20px;
   height: 20px;
   margin: 15px 0px 15px 10px;
+  background-image: url("../assets/MagnifyingGlass.png");
+  background-size: cover;
 }
 .explore-filter-selection {
   display: flex;
