@@ -57,10 +57,6 @@ const indexComponent = ({ data }) => {
             // const image = frontmatter.cover.publicURL;
             <div key={id} className={"post-box"}>
               <Link className={"link post-wrapper"} to={fields.slug}>
-                {console.log(
-                  "frontmatter.cover.childImageSharp.fixed=====>",
-                  frontmatter.cover.publicURL
-                )}
 
                 <GatsbyImage
                   className={"post-image"}
