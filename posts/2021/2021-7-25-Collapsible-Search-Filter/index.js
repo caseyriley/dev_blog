@@ -1,12 +1,11 @@
 function filter() {
-
   const defBusinessTypes = React.useRef([
     "eco-accommodations",
     "ethical experiences",
     "Resposible Travel Curators",
     "socially responsible eateries",
   ]);
-  
+
   const countryNames = React.useRef([
     "Hong Kong",
     "India",
@@ -17,7 +16,7 @@ function filter() {
     "Philippines",
     "United States Of America",
   ]);
-  
+
   const country = React.useRef({
     All: {
       BusinessTypes: [
@@ -75,11 +74,15 @@ function filter() {
       SearchString: "SEARCH ASIAN BUSINESSES",
     },
   });
-  
-  const [countryDropdownState, setCountryDopdownState] = React.useState(["All"]);
+
+  const [countryDropdownState, setCountryDopdownState] = React.useState([
+    "All",
+  ]);
   const [countryChevronState, setCountryChevronState] = React.useState(false);
   const [businessChevronState, setBusinessChevronState] = React.useState(false);
-  const [businessDropdownState, setBusinessDropdownState] = React.useState(["All"]);
+  const [businessDropdownState, setBusinessDropdownState] = React.useState([
+    "All",
+  ]);
   const [priceChevronState, setPriceChevronState] = React.useState(false);
   const [priceDropdownState, setPriceDropdownState] = React.useState(["All"]);
   const [businessTypesState, setBusinessTypesState] = React.useState(
@@ -94,7 +97,7 @@ function filter() {
   const countriesRef = React.useRef([]);
   const businessesRef = React.useRef([]);
   const pricesRef = React.useRef([]);
-  
+
   function toggleCountryChevron() {
     setCountryChevronState(!countryChevronState);
   }
@@ -112,7 +115,7 @@ function filter() {
       let selectArray = countriesRef.current.childNodes;
       for (let i = 0; i < selectArray.length; i++) {
         let el = selectArray[i].firstChild;
-  
+
         if (el.innerHTML === place) {
           el.classList.add("bold");
         }
@@ -142,7 +145,7 @@ function filter() {
           let typeArray = [];
           for (let i = 0; i < dropDownArray.length; i++) {
             let el = dropDownArray[i];
-            const addArray = country[el]["BusinessTypes"];
+            const addArray = country.current[el]["BusinessTypes"];
             for (let j = 0; j < addArray.length; j++) {
               let type = addArray[j];
               if (!typeArray.includes(type)) {
@@ -159,7 +162,7 @@ function filter() {
         let selectArray = countriesRef.current.childNodes;
         for (let i = 0; i < selectArray.length; i++) {
           let el = selectArray[i].firstChild;
-  
+
           if (el.innerHTML === place) {
             el.classList.add("bold");
           }
@@ -210,7 +213,7 @@ function filter() {
         let selectArray = businessesRef.current.childNodes;
         for (let i = 0; i < selectArray.length; i++) {
           let el = selectArray[i].firstChild;
-  
+
           if (el.innerHTML === business) {
             el.classList.remove("bold");
           }
@@ -263,7 +266,7 @@ function filter() {
       } else {
         if (priceDropdownState.length === 1) {
           setPriceDropdownState(["All"]);
-  
+
           let selectArray = pricesRef.current.childNodes;
           for (let i = 0; i < selectArray.length; i++) {
             selectArray[i].firstChild.classList.remove("bold");
@@ -288,7 +291,7 @@ function filter() {
     setPriceDropdownState(["All"]);
     setPriceChevronState(false);
   }
-  
+
   return (
     <div className={"explore-filter"}>
       <div className={"explore-filter-top"}>
@@ -317,7 +320,9 @@ function filter() {
       </div>
       <div
         ref={countriesRef}
-        className={`country-box-open ${!countryChevronState ? "box-cosed" : ""}`}
+        className={`country-box-open ${
+          !countryChevronState ? "box-cosed" : ""
+        }`}
       >
         {countryChevronState &&
           countryNames.current.map((name, index) => {
@@ -365,7 +370,7 @@ function filter() {
             );
           })}
       </div>
-  
+
       <div className={"explore-filter-section"}>
         <span className={"explore-filter-section-span"}>
           PRICE: {priceDropdownState[0] === "All" ? "All" : "..."}
@@ -402,7 +407,7 @@ function filter() {
             );
           })}
       </div>
-  
+
       <div className={"explore-filter-last-section"}>
         <div className={"explore-filter-search"}>
           <div className={"magGlass"} />
@@ -415,4 +420,4 @@ function filter() {
       </div>
     </div>
   );
-  }
+}
