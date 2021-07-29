@@ -7,6 +7,7 @@ variables: ./variables.js
 ---
 
 This is a collapsible filter based on a filter I made while working at Ecomadic. The look is simple/clean and the UX is intuitive and pleasing while offering a lot of options.
+Skip to the bottom of the page and check it out ;)
 
 ```jsx react-live
 function filter() {
@@ -340,7 +341,7 @@ function filter() {
             return (
               <div key={index} className={"explore-filter-selection"}>
                 <span
-                  className={"explore-filter-selection-span"}
+                  className={"explore-filter-selection-span fade-in"}
                   onClick={() => {
                     selectCountry(name);
                   }}
@@ -372,7 +373,7 @@ function filter() {
             return (
               <div key={index} className={`explore-filter-selection`}>
                 <span
-                  className={`explore-filter-selection-span`}
+                  className={`explore-filter-selection-span fade-in`}
                   onClick={() => selectBusinessType(type)}
                 >
                   {type}
@@ -407,7 +408,7 @@ function filter() {
             return (
               <div key={index} className={"explore-filter-selection"}>
                 <span
-                  className={"explore-filter-selection-span ex-price"}
+                  className={"explore-filter-selection-span ex-price fade-in"}
                   onClick={() => {
                     selectPrice(price);
                   }}

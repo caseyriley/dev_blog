@@ -58,10 +58,11 @@ const LinkBottom = styled.div`
 
 const blogPostTemplate = ({ data, pageContext }) => {
   const { frontmatter, body, variables } = data.mdx;
-  const { previous, next } = pageContext;
+  const { previous, next} = pageContext;
   return (
     <Background>
       <Layout>
+
         {/* <Dump previous={previous}/>
       <Dump next={next}/> */}
         <IndexWrapper>
@@ -69,11 +70,8 @@ const blogPostTemplate = ({ data, pageContext }) => {
           <p className={"blog-date"}>{frontmatter.date}</p>
         </IndexWrapper>
         <div className={"text-wrapper"}>
-          {/* <div className={"scroll-box"}> */}
             <MDXRenderer>{body}</MDXRenderer>
-          {/* </div> */}
         </div>
-        {console.log("variables++++++++++++++++++++++++++",variables)}
         <LinkBottom>
           {previous && (
             <Link className={"link"} to={previous.fields.slug}>
@@ -103,11 +101,6 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "YYYY MMMM Do")
-        variables {
-          internal {
-            content
-          }
-        }
       }
     }
   }

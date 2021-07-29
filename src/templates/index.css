@@ -1,3 +1,39 @@
+.fade-in{
+  animation: fade-in ease .6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-2{
+  animation: fade-in ease .8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* /////////////gradient selector///////////// */
 .gradient {
   width: 100%;
@@ -286,6 +322,7 @@ pre {
   justify-content: flex-start;
   align-items: flex-start;
   background-color: white;
+  margin: 50px 0px 0px 0px;
 }
 .explore-filter-top {
   width: 100%;
