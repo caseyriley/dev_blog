@@ -12,6 +12,14 @@
     height: 60px;
     font-size: 35px;
   }
+  .text-wrapper {
+    transform: translateX(-50%);
+    margin-left: 50%;
+  }
+  .text-wrapper:nth-child(3) {
+    width: 100%;
+    max-width: 1500px;
+  }
   .post-image {
     width: 800px;
     height: auto;
