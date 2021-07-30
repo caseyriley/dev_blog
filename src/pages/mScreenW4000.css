@@ -13,6 +13,14 @@
     height: 80px;
     font-size: 45px;
   }
+  .text-wrapper {
+    transform: translateX(-50%);
+    margin-left: 50%;
+  }
+  .text-wrapper:nth-child(3) {
+    width: 100%;
+    max-width: 2000px;
+  }
   .blog-title {
     font-size: 60px;
   }
