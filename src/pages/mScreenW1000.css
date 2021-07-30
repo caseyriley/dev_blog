@@ -32,6 +32,9 @@
     height: 35px;
     font-size: 20px;
   }
+  .text-wrapper:nth-child(3) {
+    max-width: 700px;
+  }
   .top-link {
     font-size: 25px;
     min-width: 370px;
