@@ -50,7 +50,7 @@ const indexComponent = ({ data }) => {
   return (
     <Background>
       <Layout>
-        <div className={"index-wrapper"}>
+        <div className={"index-wrapper fade-in-2"}>
           {/* <Dump data={data}></Dump> */}
           {data.allMdx.nodes.map(({ id, excerpt, frontmatter, fields }) => (
             // console.log("data.allMdx=======>",data.allMdx)

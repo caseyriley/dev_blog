@@ -13,6 +13,23 @@ body {
   /* background-color: rgb(244, 0, 0); */
   /* background: linear-gradient(to bottom,  darkviolet 0%, mediumspringgreen 100%); */
 }
+.fade-in-2{
+  animation: fade-in ease .7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #gatsby-focus-wrapper,
 #___gatsby {
   height: 100vh;
