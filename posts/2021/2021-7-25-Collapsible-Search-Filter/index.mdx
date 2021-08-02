@@ -10,32 +10,20 @@ This is a collapsible filter based on a filter I made while working at Ecomadic.
 
 ```jsx react-live
 function filter() {
-  const defBusinessTypes = React.useRef([
-    "eco-accommodations",
-    "ethical experiences",
-    "Resposible Travel Curators",
-    "socially responsible eateries",
+  const defBusinessTypes = React.useRef(["eco-accommodations",
+  "ethical experiences","Resposible Travel Curators","socially responsible eateries",
   ]);
 
   const countryNames = React.useRef([
-    "Hong Kong",
-    "India",
-    "Indonesia",
-    "Kenya",
-    "Laos",
-    "Malaysia",
-    "Philippines",
-    "United States Of America",
+    "Hong Kong","India","Indonesia","Kenya",
+    "Laos","Malaysia","Philippines","United States Of America",
   ]);
 
   const country = React.useRef({
     All: {
       BusinessTypes: [
-        "eco-accommodations",
-        "ethical experiences",
-        "Resposible Travel Curators",
-        "socially responsible eateries",
-        "Ancient Sites"
+        "eco-accommodations","ethical experiences","Resposible Travel Curators",
+        "socially responsible eateries","Ancient Sites"
       ]
     },
     "Hong Kong": {
@@ -43,9 +31,7 @@ function filter() {
     },
     India: {
       BusinessTypes: [
-        "eco-accommodations",
-        "ethical experiences",
-        "Resposible Travel Curators",
+        "eco-accommodations","ethical experiences","Resposible Travel Curators",
         "socially responsible eateries",
       ]
     },
@@ -69,24 +55,15 @@ function filter() {
     },
   });
 
-  const [countryDropdownState, setCountryDopdownState] = React.useState([
-    "All",
-  ]);
+  const [countryDropdownState, setCountryDopdownState] = React.useState(["All"]);
   const [countryChevronState, setCountryChevronState] = React.useState(false);
   const [businessChevronState, setBusinessChevronState] = React.useState(false);
-  const [businessDropdownState, setBusinessDropdownState] = React.useState([
-    "All",
-  ]);
+  const [businessDropdownState, setBusinessDropdownState] = React.useState(["All"]);
   const [priceChevronState, setPriceChevronState] = React.useState(false);
   const [priceDropdownState, setPriceDropdownState] = React.useState(["All"]);
-  const [businessTypesState, setBusinessTypesState] = React.useState(
-    defBusinessTypes.current
-  );
+  const [businessTypesState, setBusinessTypesState] = React.useState(defBusinessTypes.current);
   const [priceState, setPriceState] = React.useState([
-    "all prices",
-    "under $200",
-    "$200 - $500",
-    "over $500",
+    "all prices","under $200","$200 - $500","over $500",
   ]);
   const countriesRef = React.useRef([]);
   const businessesRef = React.useRef([]);
@@ -109,10 +86,7 @@ function filter() {
       let selectArray = countriesRef.current.childNodes;
       for (let i = 0; i < selectArray.length; i++) {
         let el = selectArray[i].firstChild;
-
-        if (el.innerHTML === place) {
-          el.classList.add("bold");
-        }
+        if (el.innerHTML === place) el.classList.add("bold");
       }
       const string = country.current[place]["BusinessTypes"];
       setBusinessTypesState(string);
@@ -182,11 +156,8 @@ function filter() {
     setCountryDopdownState(["All"]);
     setCountryChevronState(false);
     setBusinessChevronState(false);
-    setBusinessTypesState([
-      "eco-accommodations",
-      "ethical experiences",
-      "Resposible Travel Curators",
-      "socially responsible eateries",
+    setBusinessTypesState(["eco-accommodations","ethical experiences",
+      "Resposible Travel Curators","socially responsible eateries",
     ]);
   }
   function selectBusinessType(business) {
@@ -197,9 +168,7 @@ function filter() {
       let selectArray = businessesRef.current.childNodes;
       for (let i = 0; i < selectArray.length; i++) {
         let el = selectArray[i].firstChild;
-        if (el.innerHTML === business) {
-          el.classList.add("bold");
-        }
+        if (el.innerHTML === business) el.classList.add("bold");
       }
     } else {
       if (businessDropdownState.includes(business)) {
@@ -207,18 +176,12 @@ function filter() {
         let selectArray = businessesRef.current.childNodes;
         for (let i = 0; i < selectArray.length; i++) {
           let el = selectArray[i].firstChild;
-
-          if (el.innerHTML === business) {
-            el.classList.remove("bold");
-          }
+          if (el.innerHTML === business) el.classList.remove("bold");
         }
         let array = [...businessDropdownState];
         array.splice(index, 1);
-        if (array.length < 1) {
-          setBusinessDropdownState(["All"]);
-        } else {
-          setBusinessDropdownState(array);
-        }
+        if (array.length < 1) setBusinessDropdownState(["All"])
+        else setBusinessDropdownState(array);
       } else {
         let array = [...businessDropdownState];
         array.push(business);
@@ -226,9 +189,7 @@ function filter() {
         let selectArray = businessesRef.current.childNodes;
         for (let i = 0; i < selectArray.length; i++) {
           let el = selectArray[i].firstChild;
-          if (el.innerHTML === business) {
-            el.classList.add("bold");
-          }
+          if (el.innerHTML === business) el.classList.add("bold");
         }
       }
     }
@@ -241,9 +202,7 @@ function filter() {
       let selectArray = pricesRef.current.childNodes;
       for (let i = 0; i < selectArray.length; i++) {
         let el = selectArray[i].firstChild.innerHTML;
-        if (array.includes(el)) {
-          selectArray[i].firstChild.classList.add("bold");
-        }
+        if (array.includes(el)) selectArray[i].firstChild.classList.add("bold");
       }
     } else {
       if (!priceDropdownState.includes(price)) {
@@ -253,14 +212,11 @@ function filter() {
         let selectArray = pricesRef.current.childNodes;
         for (let i = 0; i < selectArray.length; i++) {
           let el = selectArray[i].firstChild.innerHTML;
-          if (array.includes(el)) {
-            selectArray[i].firstChild.classList.add("bold");
-          }
+          if (array.includes(el)) selectArray[i].firstChild.classList.add("bold");
         }
       } else {
         if (priceDropdownState.length === 1) {
           setPriceDropdownState(["All"]);
-
           let selectArray = pricesRef.current.childNodes;
           for (let i = 0; i < selectArray.length; i++) {
             selectArray[i].firstChild.classList.remove("bold");
@@ -273,9 +229,7 @@ function filter() {
           setPriceDropdownState(priceDDSArray);
           for (let i = 0; i < selectArray.length; i++) {
             let el = selectArray[i].firstChild;
-            if (el.innerHTML === price) {
-              el.classList.remove("bold");
-            }
+            if (el.innerHTML === price) el.classList.remove("bold");
           }
         }
       }
