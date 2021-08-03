@@ -7,6 +7,8 @@ import styled from "styled-components";
 import "./index.css";
 import "./gradientSelector.css";
 import "./likeButton.css";
+import "./mixMeldVolumeSlider.css";
+import "./collapsibleEcoFilter.css";
 
 const Background = styled.main`
   width: 100%;

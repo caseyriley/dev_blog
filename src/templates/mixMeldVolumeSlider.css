@@ -1,0 +1,201 @@
+.volume-display {
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 30px;
+  margin-bottom: 30px;
+  background-color: gainsboro;
+  border-radius: 10px;
+  padding-top: 23px;
+}
+.volume-display span {
+  position: relative;
+  color: blueviolet;
+  font-size: 40px;
+}
+.control-2 {
+  position: relative;
+  left: 50px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  transform: rotate(90deg);
+  pointer-events: none;
+  margin: 0px 10px;
+}
+.pl2-slider-input {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  position: absolute;
+  top: 91px;
+  left: -25px;
+  width: 100px;
+  opacity: 0;
+  background-color: blueviolet;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+div.control-2 span.eq {
+  position: relative;
+  top: 50px;
+  left: 22px;
+  width: 20px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-right: 45px;
+  box-shadow: inset 0 0 65px rgba(0, 0, 0, 0.4),
+    inset 0 10px 15px rgba(0, 0, 0, 0.3), inset 0 -10px 15px rgba(0, 0, 0, 0.3),
+    0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+div.control-2 span.eq:before,
+div.control-2 span.eq:after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  display: inline-block;
+  left: 35%;
+  top: 10%;
+  margin-left: -3px;
+  border-radius: 100px;
+}
+
+div.control-2 span.eq:before {
+  position: relative;
+  left: 3px;
+  margin: 0px 0px 0px 0px;
+  z-index: 8;
+  height: 80px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7),
+    inset 0 7px 10px -2px rgba(0, 0, 0, 0.5),
+    inset 0 -7px 10px -2px rgba(0, 0, 0, 0.5);
+}
+.pl2-volume-level {
+  position: absolute;
+  left: 26px;
+  bottom: -35px;
+  z-index: 9;
+  height: 37px;
+  width: 2px;
+  background: #05d4f4;
+  margin: 0px 0px 0px 0px;
+  box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.5), 0 0 10px #05d4f4;
+}
+
+span.eq span.eq-level {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  display: inline-block;
+  background: #373542;
+  left: -5px;
+  bottom: 37px;
+  margin-top: 0px;
+  border-radius: 100px;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: inset 0 5px 5px -3px rgba(255, 255, 255, 0.4),
+    inset 0 -8px 8px -3px rgba(0, 0, 0, 0.4), inset 0 0 55px rgba(0, 0, 0, 0.6),
+    -6px 0 5px -5px rgba(0, 0, 0, 0.4), 7px 0 5px -3px rgba(0, 0, 0, 0.4),
+    0 5px 5px -4px rgba(0, 0, 0, 0.7), 0 -8px 7px -4px rgba(0, 0, 0, 0.7);
+}
+
+span.eq span.eq-level:before,
+span.eq span.eq-level:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: inline-block;
+}
+
+span.eq span.eq-level:before {
+  top: 50%;
+  margin-top: -2px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+span.eq span.eq-level:after {
+  top: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.01);
+}
+
+.texture {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  opacity: .2;
+  background-image: url('../assets/texture.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
+
+div.control-2 span.eq-1:after {
+  height: 50px;
+  margin-top: 30px;
+}
+
+div.control-2 span.eq-1 span.eq-level {
+  margin-top: 80px;
+}
+div.control-2 span.eq-2 span.eq-level {
+  margin-top: 125px;
+}
+
+div.control-2 span.eq-3:after {
+  height: 120px;
+  margin-top: -40px;
+}
+
+div.control-2 span.eq-3 span.eq-level {
+  margin-top: 35px;
+}
+
+.text-1 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  top: 0;
+  margin: -15px 0px 0px -5px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  transform: rotate(-90deg);
+}
+
+.text-2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  bottom: 0;
+  margin: 0px 0px 0px -5px;
+  margin-bottom: -48px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  transform: rotate(-90deg);
+}
+
+pre {
+  width: fit-content !important;
+}
+
+.scroll-box {
+  border: 5px solid lightgreen;
+  overflow-x: scroll;
+  width: 80vw;
+}
