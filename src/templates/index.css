@@ -229,9 +229,15 @@ span.eq span.eq-level:after {
   box-shadow: 0 1px 3px rgba(255, 255, 255, 0.01);
 }
 
-span.eq span.eq-level img {
+.texture {
+  width: 20px;
+  height: 30px;
   position: absolute;
-  opacity: 0.2;
+  opacity: .2;
+  background-image: url('../assets/texture.jpg');
+  background-position: center;
+  background-size: cover;
+  
 }
 
 div.control-2 span.eq-1:after {
