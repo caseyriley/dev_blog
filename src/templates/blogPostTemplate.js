@@ -5,7 +5,7 @@ import React from "react";
 import { Layout } from "../components/Layout";
 import styled from "styled-components";
 import "./index.css";
-import countryNames from './searchFilterData.js';
+import "./gradientSelector.css"
 
 const Background = styled.main`
   width: 100%;
