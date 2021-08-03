@@ -1,5 +1,5 @@
 .app-styles {
-  margin: 0px 20px 20px 20px;
+  margin: 0px 20px 0px 20px;
   height: 100vh;
   width: calc(100vw - 40px);
   overflow-y: scroll;
