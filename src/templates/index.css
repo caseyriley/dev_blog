@@ -19,85 +19,11 @@
 
 
 /* /////////////gradient selector///////////// */
-.gradient {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-.gradient span {
-  font-size: 50px;
-  font-weight: 700;
-  margin: 20px;
-}
-.swatch-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  border: 1px solid lightgrey;
-  background-color: gainsboro;
-}
 
-.color-button {
-  width: 150px;
-  height: 30px;
-  border-radius: 100px;
-  color: rgb(239, 239, 239);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgb(195, 195, 195);
-  border-radius: 999px;
-  transition: all 1s;
-  box-shadow: 4px 4px 6px 0px rgb(0, 0, 0, 0.3);
-  text-shadow: 1px 1px 1px black;
-  transform: translateY(0px);
-  margin: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.color-button span {
-  position: relative;
-  top: -1px;
-}
-
-.color-button:hover {
-  color: white;
-  border: 1px solid white;
-  box-shadow: 2px 2px 4px 0px rgb(0, 0, 0, 0.3);
-  transform: translateY(2px);
-}
 
 /* /////////////like button////////////////// */
 
-.like-button {
-  height: 51px;
-  width: 51px;
-  border-radius: 10px;
-  border-color: purple;
-  background-color: rgb(234, 214, 234);
-  font-size: 30px;
-  cursor: pointer;
-  transition: all 0.5s;
-  box-shadow: 1px 2px 6px 0px rgb(0, 0, 0, 0.4);
-  position: relative;
-  transform: translateX(-50%);
-  margin-left: 50%;
-}
 
-.like-button:hover {
-  font-size: 35px;
-  border-color: orange;
-  background-color: rgb(148, 16, 196);
-}
-
-.like-count {
-  font-size: 22px;
-  color: purple;
-}
 
 /* //////////////Mix Meld Volume Slider////////////// */
 .volume-display {
