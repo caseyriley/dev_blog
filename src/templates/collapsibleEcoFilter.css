@@ -1,7 +1,6 @@
 .explore-filter {
   min-width: 300px;
   width: 100%;
-  border: 1px dashed lightgrey;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
