@@ -1,10 +1,8 @@
 import { Link, graphql } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
-// import Img from 'gatsby-image';
 import React from "react";
 import styled from "styled-components";
 import { Layout } from "../components/Layout";
-
 import "./index.css";
 import "./mScreenW4000.css";
 import "./mScreenW2500.css";
@@ -53,18 +51,13 @@ const indexComponent = ({ data }) => {
         <div className={"index-wrapper fade-in-2"}>
           {/* <Dump data={data}></Dump> */}
           {data.allMdx.nodes.map(({ id, excerpt, frontmatter, fields }) => (
-            // console.log("data.allMdx=======>",data.allMdx)
-            // const image = frontmatter.cover.publicURL;
             <div key={id} className={"post-box"}>
               <Link className={"link post-wrapper"} to={fields.slug}>
-
                 <GatsbyImage
                   className={"post-image"}
                   image={frontmatter.cover.childImageSharp.gatsbyImageData}
                   alt={"blog-image"}
                 />
-                {/* <img className={"post-img"} src={frontmatter.cover.publicURL} /> */}
-
                 <h1 className="blog-title">{frontmatter.title}</h1>
                 <p className={"blog-p"}>{frontmatter.date}</p>
                 <p className={"blog-p"}>{excerpt}</p>
