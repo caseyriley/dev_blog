@@ -1,7 +1,6 @@
 import { graphql, Link } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import React from "react";
-// import Dump from '../components/Dump';
 import { Layout } from "../components/Layout";
 import styled from "styled-components";
 import "./index.css";
@@ -65,9 +64,6 @@ const blogPostTemplate = ({ data, pageContext }) => {
   return (
     <Background>
       <Layout>
-
-        {/* <Dump previous={previous}/>
-      <Dump next={next}/> */}
         <IndexWrapper>
           <h1 className={"blog-title"}>{frontmatter.title}</h1>
           <p className={"blog-date"}>{frontmatter.date}</p>
