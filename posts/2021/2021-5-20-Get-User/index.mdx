@@ -17,6 +17,7 @@ const handleSubmit = async () => {
   });
 
   if (response.ok) {
+    console.log("Login failed")
   } else {
   }
   const res = await response.json();
@@ -39,7 +40,7 @@ const handleSubmit = async () => {
       headers: { Authorization: `Bearer ${token}` },
     });
     if (!response.ok) {
-      console.log("getCurrent user response failed");
+      console.log("get current user failed");
     } else {
       const json = await response.json();
       setCurrentUser(json);
